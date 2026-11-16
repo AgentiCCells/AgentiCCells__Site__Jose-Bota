@@ -1,0 +1,13 @@
+/* Shared by every page and every design: the skip link and the slim bar that says which
+   design you are looking at and links to the comparison page. Scoped with .jb- and given
+   its own colours so it reads on any design. No script. Code Apache-2.0. */
+.jb-skip{position:absolute;left:-9999px;top:0;z-index:3000;background:#14181a;color:#fff;padding:.7rem 1rem;font:600 16px/1.3 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;border-radius:0 0 .4rem 0;text-decoration:underline}
+.jb-skip:focus{left:0}
+.jb-bar{position:relative;z-index:1000;display:flex;flex-wrap:wrap;gap:.3rem 1rem;align-items:center;justify-content:center;margin:0;padding:.45rem .9rem;background:#14181a;color:#e9ecec;font:500 13px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;text-align:center;letter-spacing:0;text-transform:none}
+.jb-bar strong{font-weight:700;color:#fff}
+body .jb-bar a{color:#f6b877;text-decoration:underline;text-underline-offset:2px;padding:.2rem 0;display:inline-block}
+body .jb-bar a:hover{text-decoration-thickness:2px}
+body .jb-bar a.jb-bar-pick{color:#14181a;background:#f0a05a;font-weight:700;text-decoration:none;border-radius:999px;padding:.2rem .85rem}
+body .jb-bar a.jb-bar-pick:hover{background:#f6b877}
+body .jb-bar a:focus-visible,.jb-skip:focus-visible{outline:3px solid #fff;outline-offset:2px}
+@media print{.jb-bar,.jb-skip{display:none!important}}

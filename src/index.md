@@ -54,7 +54,11 @@ At Web Summit Lisbon 2026 (9 to 12 November), for the RiskMandate team, José to
 
 ## Photos and videos
 
-More materials are coming.
+More materials are coming. None is on the site yet.
+
+## Designs
+
+The home page comes in five designs with the same facts and sources: First Pass (the default, https://jose-bota.agenticcells.site/), The Trace (https://jose-bota.agenticcells.site/d/trace/), The Flow (https://jose-bota.agenticcells.site/d/flow/), The Fact Sheet (https://jose-bota.agenticcells.site/d/sheet/) and The Arena (https://jose-bota.agenticcells.site/d/arena/). Compare them at https://jose-bota.agenticcells.site/designs/. This file is the master copy of the facts: if two designs ever disagree, this file is right.
 
 ---
 
