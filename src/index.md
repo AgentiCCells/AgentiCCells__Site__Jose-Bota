@@ -44,7 +44,7 @@ At Web Summit Lisbon 2026 (9 to 12 November), for the RiskMandate team, José to
 - A security watcher: a read-only agent reports who committed what.
 - Agents draft, people send: his automation agent never sends.
 
-## What he can do for you (proposal, for José to confirm)
+## What he can do for you (confirmed by José, 2026-11-16)
 
 - For a full-time AI technical role: agent apps, automation and integration work, and agent security in practice.
 - For freelance projects: n8n and WhatsApp automations, agent apps, integrations, agent security demos and workshops.
