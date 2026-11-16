@@ -2,8 +2,8 @@
 
 **AI automation expert.** José builds agent apps, automations and integrations, fast, with security in mind.
 
-- Hiring for an AI role? See [What he can do for you](https://jose-bota.agenticcells.site/for-you/#full-time).
-- Have an automation project? See [What he can do for you](https://jose-bota.agenticcells.site/for-you/#projects).
+- Hiring for an AI role? See [What he can do for you](https://jose-bota.agenticcells.site/#full-time).
+- Have an automation project? See [What he can do for you](https://jose-bota.agenticcells.site/#projects).
 - Contact (supplied by José, 2026-11-16): josebota@gmail.com, https://www.linkedin.com/in/jbota/
 
 ## Selected work
@@ -56,10 +56,6 @@ At Web Summit Lisbon 2026 (9 to 12 November), for the RiskMandate team, José to
 ## Photos and videos
 
 More materials are coming. None is on the site yet.
-
-## Designs
-
-The home page comes in five designs with the same facts and sources: The Flow (the default, https://jose-bota.agenticcells.site/), The Trace (https://jose-bota.agenticcells.site/d/trace/), The Fact Sheet (https://jose-bota.agenticcells.site/d/sheet/), The Arena (https://jose-bota.agenticcells.site/d/arena/) and First Pass (https://jose-bota.agenticcells.site/d/first/). Compare them at https://jose-bota.agenticcells.site/designs/. This file is the master copy of the facts: if two designs ever disagree, this file is right.
 
 ---
 
