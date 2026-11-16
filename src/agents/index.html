@@ -18,9 +18,9 @@
 <div class="wrap">
 <a class="brand" href="../"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#0f6b62"/><circle cx="12" cy="13" r="4" fill="#fff"/><circle cx="28" cy="13" r="4" fill="#f0a05a"/><circle cx="20" cy="28" r="4" fill="#fff"/><path d="M12 13L28 13L20 28Z" fill="none" stroke="#fff" stroke-width="1.6"/></svg>José Bota</a>
 <nav aria-label="Main"><ul>
-<li><a href="../work/">Selected work</a></li>
-<li><a href="../how-he-works/">How he works</a></li>
-<li><a href="../for-you/">What he can do for you</a></li>
+<li><a href="../#work">Selected work</a></li>
+<li><a href="../#how-he-works">How he works</a></li>
+<li><a href="../#for-you">What he can do for you</a></li>
 <li><a href="../photos-and-videos/">Photos and videos</a></li>
 <li><a href="./" aria-current="page">Use with AI</a></li>
 </ul></nav>
@@ -100,10 +100,11 @@ first; their rules apply.
 
 <h3>Five designs, one set of facts</h3>
 <ul class="ticks">
-<li><a href="../"><code>/</code></a>: First Pass, the default, in <code>src/index.html</code>, with its pages <code>work/</code>, <code>how-he-works/</code> and <code>for-you/</code> and the stylesheet <code>style.css</code>.</li>
-<li><a href="../d/trace/"><code>/d/trace/</code></a>, <a href="../d/flow/"><code>/d/flow/</code></a>, <a href="../d/sheet/"><code>/d/sheet/</code></a> and <a href="../d/arena/"><code>/d/arena/</code></a>: The Trace, The Flow, The Fact Sheet and The Arena. Each is one self-contained page, <code>src/d/NAME/index.html</code>, with its own styles and no script.</li>
+<li><a href="../"><code>/</code></a>: The Flow, the default, in <code>src/index.html</code>. One self-contained page with its own styles and no script.</li>
+<li><a href="../d/trace/"><code>/d/trace/</code></a>, <a href="../d/sheet/"><code>/d/sheet/</code></a> and <a href="../d/arena/"><code>/d/arena/</code></a>: The Trace, The Fact Sheet and The Arena. Each is one self-contained page, <code>src/d/NAME/index.html</code>.</li>
+<li><a href="../d/first/"><code>/d/first/</code></a>: First Pass, the first version, with its pages <code>work/</code>, <code>how-he-works/</code> and <code>for-you/</code> and the stylesheet <code>style.css</code>.</li>
 <li><a href="../designs/"><code>/designs/</code></a> compares them, <a href="../designs.json"><code>/designs.json</code></a> lists them, and their small screenshots are in <code>src/assets/designs/</code>.</li>
-<li>This page and <a href="../photos-and-videos/">Photos and videos</a> are shared by all five.</li>
+<li>This page and <a href="../photos-and-videos/">Photos and videos</a> are shared by all five, and use <code>style.css</code>.</li>
 <li>Every page starts with the same skip link and design bar, styled by <code>assets/chrome.css</code>.</li>
 </ul>
 
@@ -120,7 +121,7 @@ first; their rules apply.
 <li>Use only material José has supplied and agreed to publish. Ask him what it shows, who made it, who else is in it and whether they have agreed, and for the caption in his words.</li>
 <li>Remove the file's metadata, including any location, and size it for the web. Photos: JPEG, at most 1600 pixels on the long side. Videos: MP4 with a poster image; if a video is over about 20 MB, do not commit it: link to it.</li>
 <li>Save it under <code>src/media/</code>. The repository is public, so a file is public from the moment it is pushed, on any branch, before any release.</li>
-<li>Put it in the <code>media-grid</code> block on <code>photos-and-videos/</code> and in the Photos and videos section of each design, in place of the matching placeholder, with this markup (from a design, the path starts <code>../../media/</code>):</li>
+<li>Put it in the <code>media-grid</code> block on <code>photos-and-videos/</code> and in the Photos and videos section of each design, in place of the matching placeholder, with this markup (on the home page the path starts <code>media/</code>; in a design under <code>d/</code> it starts <code>../../media/</code>):</li>
 </ol>
 <pre tabindex="0"><code>&lt;figure class=&quot;media&quot;&gt;
   &lt;img src=&quot;../media/photos/NAME.jpg&quot; alt=&quot;What is in the picture&quot;
@@ -140,7 +141,7 @@ first; their rules apply.
 <p>The alt text says what is in the picture. A video always has visible controls and never starts by itself. Retake the small screenshots in <code>src/assets/designs/</code> when a design changes visibly: 1440 by 900 pixels for the wide one, 390 by 844 for the narrow one.</p>
 
 <h3>Making another design the home page</h3>
-<p>José chooses the default. To change it, move that design's file to <code>src/index.html</code> and the present home page to <code>src/d/first/index.html</code>, correct the relative links in both, then update the design bar on every page, <code>designs.json</code>, <code>designs/</code>, <code>llms.txt</code> and the header links on the shared pages. Build and check every link before release.</p>
+<p>José chooses the default. To change it, swap the two files: the chosen design goes to <code>src/index.html</code> and the present home page to <code>src/d/NAME/index.html</code>. Correct the relative links in both, then update the design bar on every page, <code>designs.json</code>, <code>designs/</code>, <code>llms.txt</code>, <code>index.md</code> and the header links on the shared pages. Build and check every link before release.</p>
 </main>
 
 <footer>

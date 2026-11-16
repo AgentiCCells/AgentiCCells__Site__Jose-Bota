@@ -1,14 +1,14 @@
 {
  "about": "The same site, the same facts and sources, in five designs. The comparison page at /designs/ shows them side by side. The default is the design at the home page.",
- "default": "first",
+ "default": "flow",
  "designs": [
   {
-   "slug": "first",
-   "name": "First Pass",
-   "direction": "The site as the AgentiCCells site factory first wrote it: a plain header, one centred column and cards, over several pages. It is the home page today.",
+   "slug": "flow",
+   "name": "The Flow",
+   "direction": "The site drawn as one of his automations: connected steps on a canvas, from the first idea to the point where a person presses send, with three key figures at the top. Light and friendly. It is the home page.",
    "path": "/",
-   "thumb": "/assets/designs/first-desktop.jpg",
-   "thumb_phone": "/assets/designs/first-phone.jpg"
+   "thumb": "/assets/designs/flow-desktop.jpg",
+   "thumb_phone": "/assets/designs/flow-phone.jpg"
   },
   {
    "slug": "trace",
@@ -17,14 +17,6 @@
    "path": "/d/trace/",
    "thumb": "/assets/designs/trace-desktop.jpg",
    "thumb_phone": "/assets/designs/trace-phone.jpg"
-  },
-  {
-   "slug": "flow",
-   "name": "The Flow",
-   "direction": "The site drawn as one of his automations: connected steps on a canvas, from the first idea to the point where a person presses send. Light and friendly, for someone with a project in mind.",
-   "path": "/d/flow/",
-   "thumb": "/assets/designs/flow-desktop.jpg",
-   "thumb_phone": "/assets/designs/flow-phone.jpg"
   },
   {
    "slug": "sheet",
@@ -41,6 +33,14 @@
    "path": "/d/arena/",
    "thumb": "/assets/designs/arena-desktop.jpg",
    "thumb_phone": "/assets/designs/arena-phone.jpg"
+  },
+  {
+   "slug": "first",
+   "name": "First Pass",
+   "direction": "The site as the AgentiCCells site factory first wrote it: a plain header, one centred column and cards, over several pages.",
+   "path": "/d/first/",
+   "thumb": "/assets/designs/first-desktop.jpg",
+   "thumb_phone": "/assets/designs/first-phone.jpg"
   }
  ]
 }
