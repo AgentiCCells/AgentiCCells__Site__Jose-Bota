@@ -2,3 +2,25 @@
 
 - Seeded by the AgentiCCells site factory on 2026-11-16 from AgentiCCells/AgentiCCells__Site__Template@dev.
 - Its live state is recorded in requests/2026-11-16__jose-bota/status.json in AgentiCCells__Site__Factory.
+
+## 2026-11-16, by site@AgentiCCells.jose, at José Bota's word
+
+Live as of v0.1.6 (commit ec348f5), checked on the live address:
+
+- The home page (`src/index.html`) is one self-contained page, "The Flow": every section of the site drawn as nodes on a wire. José chose it. It has CSS motion and a background that answers the pointer through `src/assets/grid.js`, the site's only script; the page works without it, and all motion is off under reduced motion.
+- Contact details are published: the email and LinkedIn address José supplied on 2026-11-16. Nothing else.
+- The home page links José's command centre and team page on the Web Summit site, at his word.
+- The four kinds of freelance work are confirmed by José (2026-11-16), so they are no longer marked as a proposal.
+- Removed at José's word: his quoted words about the work he wants; the sentence saying he is looking for work; the placeholder about roles, location and working pattern.
+- `photos-and-videos/` and `agents/` remain as pages. `work/`, `how-he-works/` and `for-you/` hold no content: they forward to the matching section of the home page.
+- Four other designs (The Trace, The Fact Sheet, The Arena, First Pass) and a comparison page were built and released in v0.1.3 and v0.1.4, then removed in v0.1.5 at José's word ("leave this design only"). They are in the git history.
+
+Does not exist:
+
+- No photo or video. None reached the session; the media sections hold marked placeholders.
+- No sgit vault (the factory skipped that step).
+- No preview environment, and `dev` is not a protected branch: a push to `dev` is a release.
+
+Not checked by this agent: José's LinkedIn address and the two lovable.app links (the session's network blocks those hosts), and whether `#stand` opens the stand section of the command centre.
+
+The agent name `site@AgentiCCells.jose` follows the convention on AgentiCCells__Site__Yiheng-Wang; José's brief left the name from Dinis unfilled.

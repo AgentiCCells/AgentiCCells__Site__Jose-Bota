@@ -84,6 +84,7 @@ main::before{content:"";position:absolute;left:calc(var(--gutter) + var(--wire-x
 .facts dt{font-weight:800;font-size:.86rem;letter-spacing:.05em;text-transform:uppercase;color:var(--teal);margin:.9rem 0 .15rem}
 .facts dt:first-child{margin-top:0}
 .facts dd{margin:0}
+.facts dd>.btn{margin-top:.25rem}
 .ref{font-size:.74em;font-weight:700;text-decoration:none;vertical-align:super;line-height:0;padding:0 .1em;white-space:nowrap}
 .ref:hover{text-decoration:underline}
 .small{font-size:.92rem;color:var(--muted)}
@@ -155,7 +156,12 @@ h1{font-size:clamp(2.8rem,8vw,5rem);letter-spacing:-.03em;line-height:1}
 .dots i{width:16px;height:16px;border-radius:50%;border:2px solid var(--teal);background:var(--teal)}
 .dots i.off{background:transparent;border-color:var(--muted)}
 .roles{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-.roles li{border:2px solid var(--line);border-radius:12px;padding:9px 13px;font-size:.95rem;line-height:1.45;background:var(--canvas)}
+.roles li{border:2px solid var(--line);border-left:5px solid var(--teal);border-radius:12px;padding:10px 14px;font-size:.95rem;line-height:1.45;background:var(--node)}
+.roles strong{display:block;font-size:1rem;font-weight:800;color:var(--ink)}
+.roles span{color:var(--muted)}
+.roles li.wide{border-left-width:2px;background:transparent;border-style:dashed}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:.45rem}
+.chips b{font-weight:700;font-size:.9rem;background:var(--teal-soft);color:var(--teal-ink);border-radius:999px;padding:.25rem .8rem}
 .roles li.wide{grid-column:1/-1}
 
 /* for you */
@@ -194,10 +200,13 @@ h1{font-size:clamp(2.8rem,8vw,5rem);letter-spacing:-.03em;line-height:1}
 .centre h4{margin:0 0 .3rem;display:flex;align-items:center;gap:.5rem}
 .centre h4 i{width:10px;height:10px;border-radius:50%;background:var(--teal);flex:none}
 .centre p{margin:0 0 .8rem}
-.btn{display:inline-flex;align-items:center;gap:.55rem;min-height:48px;padding:0 20px;border:2px solid var(--ink);border-radius:12px;background:var(--node);color:var(--ink);font-weight:800;text-decoration:none}
-.btn.solid{background:var(--ink);color:#fff}
+.btn{display:inline-flex;align-items:center;gap:.55rem;min-height:48px;padding:0 22px;border:2px solid var(--teal);border-radius:999px;background:var(--node);color:var(--teal-ink);font-weight:800;letter-spacing:.01em;text-decoration:none;box-shadow:0 1px 0 rgba(11,79,72,.12),0 8px 18px -12px rgba(11,79,72,.55)}
+.btn.solid{background:var(--teal);color:#fff}
 .btn svg{width:20px;height:20px;flex:none}
-.btn:hover{border-color:var(--teal)}.btn.solid:hover{background:var(--teal)}
+.btn::after{content:"\2192";font-weight:800;line-height:1}
+.btn.ext::after{content:"\2197"}
+.btn:hover{background:var(--teal-soft)}.btn.solid:hover{background:var(--teal-ink)}
+.btn:focus-visible{outline:3px solid var(--orange-fill);outline-offset:3px}
 .sources{list-style:none;counter-reset:s}
 .sources li{position:relative;padding-left:2.6rem;margin:.65rem 0;font-size:.95rem;line-height:1.5}
 .sources li::before{counter-increment:s;content:"[" counter(s) "]";position:absolute;left:0;top:0;font-weight:800;color:var(--teal)}
@@ -288,7 +297,8 @@ footer p{margin:.25rem 0}
   .figures li:hover{transform:translateY(-5px);border-color:var(--orange-fill)}
   .chain>li:hover,.roles li:hover,.kinds li:hover,.media--todo:hover{transform:translateY(-3px);border-color:var(--teal)}
   .stepper a:hover,.stepper a:focus-visible{transform:translateY(-2px);background:var(--teal-soft)}
-  .btn{transition:transform .22s cubic-bezier(.2,.7,.2,1),background-color .2s ease,border-color .2s ease}.btn:hover,.btn:focus-visible{transform:translateY(-3px)}
+  .btn{transition:transform .22s cubic-bezier(.2,.7,.2,1),background-color .2s ease,border-color .2s ease,box-shadow .22s ease}.btn::after{transition:transform .22s cubic-bezier(.2,.7,.2,1)}
+  .btn:hover,.btn:focus-visible{transform:translateY(-3px);box-shadow:0 1px 0 rgba(11,79,72,.12),0 16px 26px -14px rgba(11,79,72,.7)}.btn:hover::after,.btn:focus-visible::after{transform:translateX(5px)}.btn.ext:hover::after,.btn.ext:focus-visible::after{transform:translate(3px,-3px)}
 
   /* arrows between chained steps keep pushing forward */
   .chain>li:not(:last-child)::after{animation:nudge 1.2s ease-in-out infinite}
@@ -311,8 +321,8 @@ footer p{margin:.25rem 0}
   @supports (animation-timeline:view()){
     .top::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:3px;background:var(--orange-fill);transform-origin:0 50%;animation:progress linear both;animation-timeline:scroll(root)}
     @keyframes progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-    .stage:not(#start) .stage-head,.stage:not(#start) .node,.pipe-row{animation:enter linear both;animation-timeline:view();animation-range:entry 0px entry 240px}
-    @keyframes enter{from{opacity:0;transform:translateY(40px) scale(.97)}to{opacity:1;transform:none}}
+    .stage:not(#start) .stage-head,.stage:not(#start) .node,.pipe-row{animation:enter linear both;animation-timeline:view();animation-range:entry 0px entry 110px}
+    @keyframes enter{from{opacity:.55;transform:translateY(26px)}to{opacity:1;transform:none}}
   }
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
@@ -381,7 +391,7 @@ footer p{margin:.25rem 0}
 <p class="role">AI automation expert</p>
 <h1>José Bota</h1>
 <p class="lead">José builds agent apps, automations and integrations, fast, with security in mind.</p>
-<p class="talk-actions hero-actions"><a class="btn solid" href="mailto:josebota@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>Email</a><a class="btn" href="https://www.linkedin.com/in/jbota/">LinkedIn</a></p>
+<p class="talk-actions hero-actions"><a class="btn solid" href="mailto:josebota@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>Email</a><a class="btn ext" href="https://www.linkedin.com/in/jbota/">LinkedIn</a></p>
 </div>
 <div class="fork">
 <span class="fork-lines" aria-hidden="true"></span>
@@ -431,7 +441,7 @@ footer p{margin:.25rem 0}
 <dt>In the newsroom's review</dt>
 <dd>All three live attempts to break it were refused, and the output filter caught the last practice attempt. <a class="ref" href="#src-1" aria-label="Source 1">[1]</a></dd>
 <dt>Try it</dt>
-<dd><a href="https://agent-defense-arena.lovable.app/">agent-defense-arena.lovable.app</a></dd>
+<dd><a class="btn solid ext" href="https://agent-defense-arena.lovable.app/">Try Hack the Agent</a></dd>
 <dt>Also</dt>
 <dd>Offered as a stand demo at Web Summit. <a class="ref" href="#src-4" aria-label="Source 4">[4]</a> <a class="ref" href="#src-5" aria-label="Source 5">[5]</a></dd>
 </dl>
@@ -455,7 +465,7 @@ footer p{margin:.25rem 0}
 <dt>What he did</dt>
 <dd>Designed and built the app.</dd>
 <dt>Try it</dt>
-<dd><a href="https://reach-check-agent.lovable.app/">reach-check-agent.lovable.app</a></dd>
+<dd><a class="btn solid ext" href="https://reach-check-agent.lovable.app/">Try ReachCheck</a></dd>
 <dt>Also</dt>
 <dd>Offered as a stand demo at Web Summit. <a class="ref" href="#src-4" aria-label="Source 4">[4]</a> <a class="ref" href="#src-5" aria-label="Source 5">[5]</a></dd>
 </dl>
@@ -482,8 +492,8 @@ footer p{margin:.25rem 0}
 <li>His WhatsApp flow<small>built in n8n</small></li>
 <li>The team's WhatsApp group<small>updates</small></li>
 </ol></dd>
-<dt>Try it <span class="label todo">Placeholder</span></dt>
-<dd class="todo-text">The flow is internal to the team; a write-up or screenshots are to follow, with José's approval.</dd>
+<dt>Try it</dt>
+<dd><span class="label todo">To follow</span><span class="todo-text" style="display:block;margin-top:.35rem">The flow is internal to the team; a write-up or screenshots are to follow, with José's approval.</span></dd>
 </dl>
 </div>
 </div>
@@ -498,18 +508,18 @@ footer p{margin:.25rem 0}
 </div>
 <p>His agents made 277 commits on the team's site. <a class="ref" href="#src-2" aria-label="Source 2">[2]</a> Each agent has one job:</p>
 <ul class="roles">
-<li>an automation agent that keeps the n8n flows as tested code and never sends</li>
-<li>a developer for automations and integrations (n8n, WhatsApp, the site)</li>
-<li>a code reviewer that reviews every diff before it is pushed</li>
-<li>a read-only security watcher that reports who committed what</li>
-<li>a helper that gets anyone stuck on setup unstuck</li>
-<li>a sales coach that trains his RiskMandate pitch by role-play</li>
-<li class="wide">a conductor, a designer, a CRM agent, a vault agent, an accountant and a dashboard agent</li>
+<li><strong>Automation agent</strong><span>Keeps the n8n flows as tested code and never sends.</span></li>
+<li><strong>Developer</strong><span>For automations and integrations (n8n, WhatsApp, the site).</span></li>
+<li><strong>Code reviewer</strong><span>Reviews every diff before it is pushed.</span></li>
+<li><strong>Security watcher</strong><span>Read-only: reports who committed what.</span></li>
+<li><strong>Helper</strong><span>Gets anyone stuck on setup unstuck.</span></li>
+<li><strong>Sales coach</strong><span>Trains his RiskMandate pitch by role-play.</span></li>
+<li class="wide"><span>And six more:</span><span class="chips"><b>conductor</b><b>designer</b><b>CRM agent</b><b>vault agent</b><b>accountant</b><b>dashboard agent</b></span></li>
 </ul>
 <div class="centre">
 <h4><i aria-hidden="true"></i>His command centre on the Web Summit site</h4>
 <p>Tasks, workstreams, decisions, agents and Ask Claude, built from the repository at every release.<a class="ref" href="#src-6" aria-label="Source 6">[6]</a></p>
-<p class="talk-actions"><a class="btn solid" href="https://web-summit.sgit.ai/people/jose/app/index.html#stand">Open the command centre</a><a class="btn" href="https://web-summit.sgit.ai/team/jose/index.html">His team page</a><a class="btn" href="https://web-summit.sgit.ai/people/jose/index.md">His people page</a></p>
+<p class="talk-actions"><a class="btn solid ext" href="https://web-summit.sgit.ai/people/jose/app/index.html#stand">Open the command centre</a><a class="btn ext" href="https://web-summit.sgit.ai/team/jose/index.html">His team page</a><a class="btn ext" href="https://web-summit.sgit.ai/people/jose/index.md">His people page</a></p>
 </div>
 </article>
 </section>
@@ -622,7 +632,7 @@ footer p{margin:.25rem 0}
 </div>
 <div class="node end talk">
 <p class="talk-line">Hiring for an AI role, or have an automation project? Let's talk.</p>
-<p class="talk-actions"><a class="btn solid" href="mailto:josebota@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>Send an email</a><a class="btn" href="https://www.linkedin.com/in/jbota/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10.5V17M8 7.2v.1M12 17v-3.6c0-1.6 1-2.6 2.3-2.6S16.5 11.8 16.5 13.4V17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>LinkedIn</a></p>
+<p class="talk-actions"><a class="btn solid" href="mailto:josebota@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>Send an email</a><a class="btn ext" href="https://www.linkedin.com/in/jbota/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10.5V17M8 7.2v.1M12 17v-3.6c0-1.6 1-2.6 2.3-2.6S16.5 11.8 16.5 13.4V17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>LinkedIn</a></p>
 <p class="small" style="margin-top:.9rem"><a href="mailto:josebota@gmail.com">josebota@gmail.com</a> · <a href="https://www.linkedin.com/in/jbota/">linkedin.com/in/jbota</a></p>
 <div class="talk-ai">
 <p class="talk-line">Or let your AI assistant read the site for you.</p>
