@@ -2,8 +2,6 @@
 
 **AI automation expert.** José builds agent apps, automations and integrations, fast, with security in mind.
 
-He is looking for work: a full-time AI technical role would suit him well, and he continues to take freelance projects.
-
 - Hiring for an AI role? See [What he can do for you](https://jose-bota.agenticcells.site/for-you/#full-time).
 - Have an automation project? See [What he can do for you](https://jose-bota.agenticcells.site/for-you/#projects).
 - Contact (supplied by José, 2026-11-16): josebota@gmail.com, https://www.linkedin.com/in/jbota/

@@ -1,6 +1,6 @@
 # José Bota
 
-Website and portfolio for José Bota, AI automation expert: agent apps, automations and integrations, built fast, with security in mind. Open to a full-time AI role and to freelance work.
+Website and portfolio for José Bota, AI automation expert: agent apps, automations and integrations, built fast, with security in mind.
 
 Pages (all under `src/`): home, selected work (`work/`), how he works (`how-he-works/`), what he can do for you (`for-you/`), photos and videos (`photos-and-videos/`), and use with AI (`agents/`), plus `llms.txt` and the home page as `index.md`, the master copy of the facts. Static HTML and CSS, with one small script (`src/assets/grid.js`, the home page's pointer-reactive background, which the page works without); nothing loaded from other hosts. The home page prints on four A4 pages; The Fact Sheet is the two-page version.
 
