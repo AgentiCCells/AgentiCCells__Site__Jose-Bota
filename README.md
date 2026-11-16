@@ -6,7 +6,7 @@ Pages (all under `src/`): home, selected work (`work/`), how he works (`how-he-w
 
 The home page comes in five designs with the same facts: The Flow (`src/index.html`, the default), The Trace, The Fact Sheet and The Arena (`src/d/trace/`, `d/sheet/`, `d/arena/`), and First Pass (`src/d/first/`, with its pages `work/`, `how-he-works/` and `for-you/` and `style.css`). Each of the first four is one self-contained page with its own styles and no script. `src/designs/` compares them, `src/designs.json` lists them, their small screenshots are in `src/assets/designs/`, and `src/assets/chrome.css` styles the design bar every page starts with. How to change a fact, add a photo or a video, or make another design the home page is on the "Use with AI" page, `src/agents/index.html`.
 
-This is a first version: materials, screenshots and contact details follow from José. José approves every change about him before it goes live.
+This is a first version: photos, videos and screenshots follow from José. His contact details (email and LinkedIn) were supplied by José on 2026-11-16. José approves every change about him before it goes live.
 
 - Live at https://jose-bota.agenticcells.site (version at /version.json).
 - Made by the AgentiCCells site factory from request `requests/2026-11-16__jose-bota/` in AgentiCCells__Site__Factory, seeded from AgentiCCells__Site__Template.

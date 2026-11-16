@@ -6,7 +6,7 @@ He is looking for work. In his words, relayed by Dinis Cruz: "What I want is wor
 
 - Hiring for an AI role? See [What he can do for you](https://jose-bota.agenticcells.site/for-you/#full-time).
 - Have an automation project? See [What he can do for you](https://jose-bota.agenticcells.site/for-you/#projects).
-- Contact details to follow.
+- Contact (supplied by José, 2026-11-16): josebota@gmail.com, https://www.linkedin.com/in/jbota/
 
 ## Selected work
 

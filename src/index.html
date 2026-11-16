@@ -15,7 +15,7 @@
    a wire runs down the canvas and every section is a node on it. No script, no outside
    assets. Code Apache-2.0, text CC BY 4.0. */
 :root{
-  --canvas:#f4f1ea;--dot:#d6cfc1;--node:#ffffff;--ink:#1d2326;--muted:#566066;--line:#c9c1b2;
+  --canvas:#e8f0f0;--dot:#d3dfdf;--node:#ffffff;--ink:#1d2326;--muted:#566066;--line:#b9c7c7;
   --teal:#0f6b62;--teal-soft:#dff1ee;--teal-ink:#0b4f48;
   --orange:#95500f;--orange-fill:#f0a05a;--orange-soft:#fdebd6;--orange-ink:#7a3e08;
   --plum:#6b3fa0;--plum-soft:#efe6f8;--plum-ink:#4f2d7a;
@@ -26,7 +26,7 @@
 }
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-padding-top:84px}
-body{margin:0;color:var(--ink);font:400 18px/1.6 var(--sans);background-color:var(--canvas);background-image:radial-gradient(var(--dot) 1.2px,transparent 1.3px);background-size:22px 22px;overflow-wrap:break-word}
+body{margin:0;color:var(--ink);font:400 18px/1.6 var(--sans);background-color:var(--canvas);background-image:radial-gradient(var(--dot) 1px,transparent 1.1px);background-size:26px 26px;overflow-wrap:break-word}
 a{color:var(--teal);text-underline-offset:3px;text-decoration-thickness:1.5px}
 a:hover{text-decoration-thickness:3px}
 :focus-visible{outline:3px solid var(--plum);outline-offset:3px;border-radius:6px}
@@ -176,6 +176,13 @@ h1{font-size:clamp(2.8rem,8vw,5rem);letter-spacing:-.03em;line-height:1}
 .files li{border:2px solid var(--line);border-radius:12px;padding:10px 14px;background:var(--canvas);font-size:.95rem;line-height:1.45}
 .end{border-color:var(--plum);border-width:3px}
 .end::after{border-color:var(--plum);background:var(--plum)}
+.talk{display:block}
+.talk-line{font-size:1.25rem;font-weight:800;margin:0 0 .9rem}
+.talk-actions{display:flex;flex-wrap:wrap;gap:10px;margin:0}
+.btn{display:inline-flex;align-items:center;gap:.55rem;min-height:48px;padding:0 20px;border:2px solid var(--ink);border-radius:12px;background:var(--node);color:var(--ink);font-weight:800;text-decoration:none}
+.btn.solid{background:var(--ink);color:#fff}
+.btn svg{width:20px;height:20px;flex:none}
+.btn:hover{border-color:var(--teal)}.btn.solid:hover{background:var(--teal)}
 .sources{list-style:none;counter-reset:s}
 .sources li{position:relative;padding-left:2.6rem;margin:.65rem 0;font-size:.95rem;line-height:1.5}
 .sources li::before{counter-increment:s;content:"[" counter(s) "]";position:absolute;left:0;top:0;font-weight:800;color:var(--teal)}
@@ -266,6 +273,7 @@ footer p{margin:.25rem 0}
   .figures li:hover{transform:translateY(-5px);border-color:var(--orange-fill)}
   .chain>li:hover,.roles li:hover,.kinds li:hover,.media--todo:hover{transform:translateY(-3px);border-color:var(--teal)}
   .stepper a:hover,.stepper a:focus-visible{transform:translateY(-2px);background:var(--teal-soft)}
+  .btn{transition:transform .22s cubic-bezier(.2,.7,.2,1),background-color .2s ease,border-color .2s ease}.btn:hover,.btn:focus-visible{transform:translateY(-3px)}
 
   /* arrows between chained steps keep pushing forward */
   .chain>li:not(:last-child)::after{animation:nudge 1.2s ease-in-out infinite}
@@ -378,7 +386,7 @@ footer p{margin:.25rem 0}
 <li><strong>14</strong><span>agents, 13 running<a class="ref" href="#src-6" aria-label="Source 6">[6]</a></span></li>
 <li><strong>277</strong><span>commits by his agents on the team's site<a class="ref" href="#src-2" aria-label="Source 2">[2]</a></span></li>
 </ul>
-<p class="small">Contact details to follow. This page is one flow: each step below is a node on the wire, and every figure names its source.</p>
+<p class="small">Reach him at <a href="mailto:josebota@gmail.com">josebota@gmail.com</a> or on <a href="https://www.linkedin.com/in/jbota/">LinkedIn</a>. This page is one flow: each step below is a node on the wire, and every figure names its source.</p>
 </section>
 
 <section class="stage" id="work" aria-labelledby="h-work">
@@ -606,9 +614,10 @@ footer p{margin:.25rem 0}
 <p class="kicker">Step 6</p>
 <h2 id="h-contact">Get in touch</h2>
 </div>
-<div class="node end">
-<p><span class="label todo">Placeholder</span></p>
-<p class="todo-text" style="font-size:1.15rem">Contact details to follow, once José provides them.</p>
+<div class="node end talk">
+<p class="talk-line">Hiring for an AI role, or have an automation project? Let's talk.</p>
+<p class="talk-actions"><a class="btn solid" href="mailto:josebota@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>Send an email</a><a class="btn" href="https://www.linkedin.com/in/jbota/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10.5V17M8 7.2v.1M12 17v-3.6c0-1.6 1-2.6 2.3-2.6S16.5 11.8 16.5 13.4V17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>LinkedIn</a></p>
+<p class="small" style="margin-top:.9rem"><a href="mailto:josebota@gmail.com">josebota@gmail.com</a> · <a href="https://www.linkedin.com/in/jbota/">linkedin.com/in/jbota</a></p>
 </div>
 </section>
 
