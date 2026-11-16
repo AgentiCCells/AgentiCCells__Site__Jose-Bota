@@ -2,7 +2,7 @@
 
 **AI automation expert.** José builds agent apps, automations and integrations, fast, with security in mind.
 
-He is looking for work. In his words, relayed by Dinis Cruz: "What I want is work overall, if possible to get a nice full time AI tech work would be amazing, but I will continue working freelance."
+He is looking for work: a full-time AI technical role would suit him well, and he continues to take freelance projects.
 
 - Hiring for an AI role? See [What he can do for you](https://jose-bota.agenticcells.site/for-you/#full-time).
 - Have an automation project? See [What he can do for you](https://jose-bota.agenticcells.site/for-you/#projects).
