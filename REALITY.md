@@ -15,6 +15,8 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 - `photos-and-videos/` and `agents/` remain as pages. `work/`, `how-he-works/` and `for-you/` hold no content: they forward to the matching section of the home page.
 - Four other designs (The Trace, The Fact Sheet, The Arena, First Pass) and a comparison page were built and released in v0.1.3 and v0.1.4, then removed in v0.1.5 at José's word ("leave this design only"). They are in the git history.
 
+- Released after v0.1.6, at José's word: the home page's "Point your agent at this site" section as four boxes was already in v0.1.6; the restyled buttons, the agent roles as names with a line each, and this record went out in the release that carries this line.
+
 Does not exist:
 
 - No photo or video. None reached the session; the media sections hold marked placeholders.
