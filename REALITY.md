@@ -17,6 +17,8 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - Released after v0.1.6, at José's word: the home page's "Point your agent at this site" section as four boxes was already in v0.1.6; the restyled buttons, the agent roles as names with a line each, and this record went out in the release that carries this line.
 
+- After an audit asked for by José: the home page says each thing once. "How he works" and the agent team are one section, contact comes before the section for agents and the sources, and the home page has no photos and videos section until there is media (the `photos-and-videos/` page stays). No fact was removed.
+
 Does not exist:
 
 - No photo or video. None reached the session; the media sections hold marked placeholders.
