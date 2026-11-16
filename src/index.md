@@ -36,6 +36,9 @@ At Web Summit Lisbon 2026 (9 to 12 November), for the RiskMandate team, José to
 
 277 commits by his agents on the team's site (source: https://newsroom.sgit.ai/articles/ten-days-at-web-summit.md, read 2026-11-16).
 
+- His command centre on the Web Summit site: https://web-summit.sgit.ai/people/jose/app/index.html#stand
+- His team page: https://web-summit.sgit.ai/team/jose/index.html
+
 ## How he works
 
 - Fast: two working agent apps in a day.

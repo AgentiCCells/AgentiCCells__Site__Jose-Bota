@@ -29,6 +29,11 @@ Rules for agents reading this site:
 - https://web-summit.sgit.ai/meet/jose/index.md
 - https://web-summit.sgit.ai/people/jose/index.md
 
+## His pages on the Web Summit site
+
+- Command centre: https://web-summit.sgit.ai/people/jose/app/index.html#stand
+- Team page: https://web-summit.sgit.ai/team/jose/index.html
+
 ## Apps
 
 - Hack the Agent: https://agent-defense-arena.lovable.app/

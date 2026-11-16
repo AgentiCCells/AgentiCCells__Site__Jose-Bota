@@ -180,6 +180,13 @@ h1{font-size:clamp(2.8rem,8vw,5rem);letter-spacing:-.03em;line-height:1}
 .talk{display:block}
 .talk-line{font-size:1.25rem;font-weight:800;margin:0 0 .9rem}
 .talk-actions{display:flex;flex-wrap:wrap;gap:10px;margin:0}
+.hero-actions{margin-top:1.1rem}
+.talk-ai{margin-top:1.1rem;padding-top:1.1rem;border-top:2px dashed var(--line)}
+.talk-ai .talk-line{font-size:1.05rem}
+.centre{margin-top:1rem;padding:16px 18px;border:2px solid var(--teal);border-radius:14px;background:var(--teal-soft)}
+.centre h4{margin:0 0 .3rem;display:flex;align-items:center;gap:.5rem}
+.centre h4 i{width:10px;height:10px;border-radius:50%;background:var(--teal);flex:none}
+.centre p{margin:0 0 .8rem}
 .btn{display:inline-flex;align-items:center;gap:.55rem;min-height:48px;padding:0 20px;border:2px solid var(--ink);border-radius:12px;background:var(--node);color:var(--ink);font-weight:800;text-decoration:none}
 .btn.solid{background:var(--ink);color:#fff}
 .btn svg{width:20px;height:20px;flex:none}
@@ -287,6 +294,7 @@ footer p{margin:.25rem 0}
   .pipe>li.person{animation-name:land;animation-delay:6s}
   @keyframes run{0%,14%,100%{box-shadow:var(--shadow)}5%{box-shadow:0 0 0 4px var(--orange-fill),var(--shadow)}}
   @keyframes land{0%,16%,100%{box-shadow:var(--shadow);transform:none}6%{box-shadow:0 0 0 6px var(--plum-soft),0 0 0 9px var(--plum);transform:scale(1.03)}}
+  .centre h4 i{animation:port 2.2s ease-in-out infinite}
   .dots i:not(.off){animation:blink 3.2s ease-in-out infinite}
   .dots i:nth-child(3n){animation-delay:.5s}.dots i:nth-child(3n+1){animation-delay:1.1s}
   @keyframes blink{50%{opacity:.45}}
@@ -371,6 +379,7 @@ footer p{margin:.25rem 0}
 <p class="role">AI automation expert</p>
 <h1>José Bota</h1>
 <p class="lead">José builds agent apps, automations and integrations, fast, with security in mind.</p>
+<p class="talk-actions hero-actions"><a class="btn solid" href="mailto:josebota@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>Email</a><a class="btn" href="https://www.linkedin.com/in/jbota/">LinkedIn</a></p>
 </div>
 <div class="fork">
 <span class="fork-lines" aria-hidden="true"></span>
@@ -382,7 +391,7 @@ footer p{margin:.25rem 0}
 <li><strong>14</strong><span>agents, 13 running<a class="ref" href="#src-6" aria-label="Source 6">[6]</a></span></li>
 <li><strong>277</strong><span>commits by his agents on the team's site<a class="ref" href="#src-2" aria-label="Source 2">[2]</a></span></li>
 </ul>
-<p class="small">Reach him at <a href="mailto:josebota@gmail.com">josebota@gmail.com</a> or on <a href="https://www.linkedin.com/in/jbota/">LinkedIn</a>. This page is one flow: each step below is a node on the wire, and every figure names its source.</p>
+<p class="small">This page is one flow: each step below is a node on the wire, and every figure names its source.</p>
 </section>
 
 <section class="stage" id="work" aria-labelledby="h-work">
@@ -495,7 +504,11 @@ footer p{margin:.25rem 0}
 <li>a sales coach that trains his RiskMandate pitch by role-play</li>
 <li class="wide">a conductor, a designer, a CRM agent, a vault agent, an accountant and a dashboard agent</li>
 </ul>
-<p class="small" style="margin-top:.9rem">See it: <a href="https://web-summit.sgit.ai/people/jose/index.md">his people page on the Web Summit site</a>.</p>
+<div class="centre">
+<h4><i aria-hidden="true"></i>His command centre on the Web Summit site</h4>
+<p>Tasks, workstreams, decisions, agents and Ask Claude, built from the repository at every release.<a class="ref" href="#src-6" aria-label="Source 6">[6]</a></p>
+<p class="talk-actions"><a class="btn solid" href="https://web-summit.sgit.ai/people/jose/app/index.html#stand">Open the command centre</a><a class="btn" href="https://web-summit.sgit.ai/team/jose/index.html">His team page</a><a class="btn" href="https://web-summit.sgit.ai/people/jose/index.md">His people page</a></p>
+</div>
 </article>
 </section>
 
@@ -611,6 +624,10 @@ footer p{margin:.25rem 0}
 <p class="talk-line">Hiring for an AI role, or have an automation project? Let's talk.</p>
 <p class="talk-actions"><a class="btn solid" href="mailto:josebota@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>Send an email</a><a class="btn" href="https://www.linkedin.com/in/jbota/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10.5V17M8 7.2v.1M12 17v-3.6c0-1.6 1-2.6 2.3-2.6S16.5 11.8 16.5 13.4V17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>LinkedIn</a></p>
 <p class="small" style="margin-top:.9rem"><a href="mailto:josebota@gmail.com">josebota@gmail.com</a> · <a href="https://www.linkedin.com/in/jbota/">linkedin.com/in/jbota</a></p>
+<div class="talk-ai">
+<p class="talk-line">Or let your AI assistant read the site for you.</p>
+<p class="talk-actions"><a class="btn solid" href="agents/#hiring-or-project">Ask your AI assistant about José</a><a class="btn" href="llms.txt">Hiring brief for agents</a></p>
+</div>
 </div>
 </section>
 
