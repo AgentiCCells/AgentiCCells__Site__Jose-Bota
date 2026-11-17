@@ -60,7 +60,7 @@ Both apps were offered as stand demos at Web Summit (https://web-summit.sgit.ai/
 ## What he can do for you (confirmed by José, 2026-11-16 and 2026-11-17)
 
 - For a full-time AI technical role: agent apps, automation and integration work, and agent security in practice.
-- For freelance projects: n8n and WhatsApp automations, agent apps, integrations, agent security demos and workshops.
+- For freelance projects: automations, agent apps, integrations, agent security demos and workshops.
 - As an AI implementation consultant: he advises on where automation and AI are practical for a business, and helps put them into practice (supplied by José, 2026-11-17).
 - Custom AI integrations and development: he builds AI features into a business's own software, made for that business (supplied by José, 2026-11-17).
 - A team of agents, kept in check: under review and watch, with tested automations and no unsupervised sending.
