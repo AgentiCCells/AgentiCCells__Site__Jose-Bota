@@ -99,10 +99,14 @@ main::before{content:"";position:absolute;left:calc(var(--gutter) + var(--wire-x
 .start::after{border-color:var(--orange-fill);background:var(--orange-fill);top:36px;left:-9px}
 .start::before{top:42px}
 .portrait{position:absolute;right:40px;top:50%;transform:translateY(-50%);width:210px;height:210px;border-radius:50%;object-fit:cover;border:5px solid var(--node);box-shadow:0 0 0 3px var(--orange-fill),var(--shadow)}
-.team-photo{margin:0 0 22px;background:var(--node);border:2px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
-.team-photo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:50% 68%}
-.team-photo figcaption{padding:.7rem 1.1rem .85rem;font-size:.95rem;color:var(--ink)}
-.team-photo .credit{display:block;color:var(--muted);font-size:.85rem;margin-top:.15rem}
+.lead-row{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:28px;align-items:start;margin:0 0 20px}
+.lead-row .stage-head{margin:0}
+.team-photo{margin:0;background:var(--node);border:2px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.team-photo a{display:block}
+.team-photo img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 72%}
+.team-photo figcaption{padding:.5rem .8rem .65rem;font-size:.85rem;line-height:1.4;color:var(--ink)}
+.team-photo .credit{display:block;color:var(--muted);font-size:.8rem;margin-top:.15rem}
+@media (max-width:860px){.lead-row{grid-template-columns:1fr;gap:16px}.team-photo{max-width:300px}}
 @media (max-width:1000px){.portrait{position:static;transform:none;display:block;width:92px;height:92px;margin:0 0 12px;border-width:3px}}
 .role{margin:0 0 .3rem;font-size:.9rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--orange)}
 h1{font-size:clamp(2.8rem,8vw,5rem);letter-spacing:-.03em;line-height:1}
@@ -484,16 +488,17 @@ footer p{margin:.25rem 0}
 </section>
 
 <section class="stage" id="work" aria-labelledby="h-work">
+<div class="lead-row">
 <div class="stage-head">
 <span class="port" aria-hidden="true"></span>
 <h2 id="h-work">At Web Summit 2026, with the RiskMandate team</h2>
 <p>I was at Web Summit Lisbon 2026 with the <a href="https://riskmandate.ai/">RiskMandate</a> startup team, and ran its technical side with my own team of agents. Each figure links to its public source.</p>
 </div>
-
 <figure class="media team-photo">
-<img src="media/photos/web-summit-riskmandate-team.jpg" alt="Six people from the RiskMandate team, smiling, in front of the Web Summit main stage, where a row of humanoid robots stands under the Web Summit sign" width="1600" height="1475" loading="lazy" decoding="async">
-<figcaption>With the RiskMandate team in front of the main stage at Web Summit Lisbon 2026. I'm the tallest, at the back. <span class="credit">Photo supplied by José. Name badges blurred.</span></figcaption>
+<a href="media/photos/web-summit-riskmandate-team.jpg"><img src="media/photos/web-summit-riskmandate-team.jpg" alt="Six people from the RiskMandate team, smiling, in front of the Web Summit main stage, where a row of humanoid robots stands under the Web Summit sign" width="1600" height="1475" loading="lazy" decoding="async"></a>
+<figcaption>With the RiskMandate team at Web Summit Lisbon 2026. I'm the tallest, at the back. <span class="credit">Name badges blurred. Select the photo to see it full size.</span></figcaption>
 </figure>
+</div>
 
 <article class="node" id="agent-team">
 <h3>My agent team</h3>
