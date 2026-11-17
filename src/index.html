@@ -236,14 +236,14 @@ h1{font-size:clamp(2.8rem,8vw,5rem);letter-spacing:-.03em;line-height:1}
 .about{list-style:none;margin:.3rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.35rem 1.3rem;color:var(--muted);font-weight:600}
 .about li{display:flex;align-items:center;gap:.4rem}
 .about svg{width:20px;height:20px;flex:none;color:var(--teal)}
-.tools{margin:16px 0 6px}
-.tools h2{font-size:.86rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--orange);margin:0 0 .5rem}
-.tools dl{margin:0;background:var(--node);border:2px solid var(--line);border-radius:16px;padding:6px 18px;box-shadow:var(--shadow)}
-.tools dl>div{display:grid;grid-template-columns:13.5rem 1fr;gap:.2rem 1rem;padding:.55rem 0;border-bottom:1px solid var(--line)}
-.tools dl>div:last-child{border-bottom:0}
-.tools dt{font-weight:800;color:var(--teal-ink)}
-.tools dd{margin:0}
-@media (max-width:640px){.tools dl>div{grid-template-columns:1fr}}
+.tools{margin:32px 0 6px}
+.tools h2{font-size:.78rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 .35rem}
+.tools dl{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 1.6rem;font-size:.84rem;line-height:1.4;color:var(--muted)}
+.tools dl>div{display:block;padding:.3rem 0;border-top:1px solid var(--line)}
+.tools dt{display:inline;font-weight:800;color:var(--ink)}
+.tools dt::after{content:": "}
+.tools dd{display:inline;margin:0}
+@media (max-width:760px){.tools dl{grid-template-columns:1fr}}
 .hero-actions{margin-top:1.1rem}
 .talk-ai{margin-top:1.1rem;padding-top:1.1rem;border-top:2px dashed var(--line)}
 .talk-ai .talk-line{font-size:1.05rem}
@@ -473,7 +473,7 @@ footer p{margin:.25rem 0}
 <div class="now" id="now">
 <h2>Where I work now</h2>
 <ul>
-<li><a href="https://itwithus.com/"><strong>ITwithUs</strong></a><span class="role-tag">Co-founder</span><span class="what">AI that answers clients and handles bookings for local businesses.</span></li>
+<li><a href="https://itwithus.com/"><strong>ITwithUs</strong></a><span class="role-tag">Co-founder</span><span class="what">AI that answers clients, plus custom AI integrations and development.</span></li>
 <li><a href="https://voicedebrief.ai/"><strong>VoiceDebrief</strong></a><span class="role-tag">Co-founder / Developer</span><span class="what">Drop a voice note or an audio file. Get the debrief.</span></li>
 <li><a href="https://promptugal.news/"><strong>PrompTugal.news</strong></a><span class="role-tag">Developer</span><span class="what">Local news about technology and AI in Portugal.</span></li>
 </ul>
@@ -482,8 +482,8 @@ footer p{margin:.25rem 0}
 <h2>Tools I use</h2>
 <dl>
 <div><dt>Agent tooling</dt><dd>Claude Code, Cursor, MCP servers, VS Code, GitHub, Lovable</dd></div>
-<div><dt>Models</dt><dd>OpenAI and Anthropic APIs, OpenRouter, Claude, ChatGPT</dd></div>
 <div><dt>Messaging and integration</dt><dd>n8n, Make, Zapier, the WhatsApp Business API, webhooks, REST APIs</dd></div>
+<div><dt>Models</dt><dd>OpenAI and Anthropic APIs, OpenRouter, Claude, ChatGPT</dd></div>
 <div><dt>Data and hosting</dt><dd>Supabase, Firebase, Vercel, Cloudflare, GitHub Pages</dd></div>
 </dl>
 </div>

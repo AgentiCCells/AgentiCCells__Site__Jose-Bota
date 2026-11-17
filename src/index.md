@@ -10,7 +10,7 @@
 
 Supplied by José, 2026-11-17:
 
-- Co-founder of ITwithUs (https://itwithus.com/): AI that answers clients and handles bookings for local businesses (from the site's own description, read 2026-11-17).
+- Co-founder of ITwithUs (https://itwithus.com/): AI that answers clients, plus custom AI integrations and development (José's own description, 2026-11-17).
 - Co-founder and developer of VoiceDebrief (https://voicedebrief.ai/): "Drop a voice note or an audio file. Get the debrief."
 - Developer at PrompTugal.news (https://promptugal.news/): independent local news about technology and AI in Portugal, town by town (the site's own description, read 2026-11-17).
 
