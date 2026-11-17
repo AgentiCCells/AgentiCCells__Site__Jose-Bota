@@ -169,7 +169,13 @@ h1{font-size:clamp(2.8rem,8vw,5rem);letter-spacing:-.03em;line-height:1}
 /* for you */
 .kinds{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:.7rem 0 .9rem}
 .kinds li{border:2px solid var(--line);border-radius:14px;padding:12px 14px;background:var(--canvas);font-size:.95rem;line-height:1.45}
-.kinds h4{margin:0 0 .25rem;font-size:1.02rem}
+.kinds h4{margin:0 0 .15rem;font-size:1.02rem}
+.kinds.one{grid-template-columns:1fr;gap:10px;margin-top:.5rem}
+.kinds.one li{display:flex;gap:.8rem;align-items:flex-start;background:var(--node);border-left:5px solid var(--teal);color:var(--muted)}
+.kinds.one h4{color:var(--ink)}
+.kinds.one svg{width:26px;height:26px;flex:none;margin-top:.1rem;color:var(--teal);padding:4px;box-sizing:content-box;background:var(--teal-soft);border-radius:9px}
+.branch-node>.small{margin:.1rem 0 0}
+::selection{background:var(--teal);color:#fff}
 .fork .kinds{grid-template-columns:1fr}
 
 /* media */
@@ -502,15 +508,22 @@ footer p{margin:.25rem 0}
 <div class="fork">
 <div class="node branch-node" id="full-time">
 <h3>Hiring for an AI role?</h3>
-<p>What José would bring to a full-time AI technical team is what the work above shows: agent apps built quickly, automation and integration work, agent security in practice, and a team of agents kept under review and watch.</p>
+<p class="small">What he would bring to a full-time AI technical team:</p>
+<ul class="kinds one">
+<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L5 13h6l-1 8 8-10h-6z"/></g></svg><div><h4>Agent apps, built quickly</h4>From idea to something people can use: two in a day at the Vibathon Algarve 2026.</div></li>
+<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15l6-6"/><path d="M10 6l1-1a4 4 0 0 1 6 6l-1 1"/><path d="M14 18l-1 1a4 4 0 0 1-6-6l1-1"/></g></svg><div><h4>Automation and integration</h4>The RiskMandate team's channels and agents at Web Summit Lisbon 2026.</div></li>
+<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></g></svg><div><h4>Agent security in practice</h4>Prompt injection, tool allowlists, server-side authorisation and output filters.</div></li>
+<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g></svg><div><h4>A team of agents, kept in check</h4>Under review and watch, with tested automations and no unsupervised sending.</div></li>
+</ul>
 </div>
 <div class="node branch-node" id="projects">
 <h3>Have an automation project?</h3>
-<ul class="kinds">
-<li><h4>n8n and WhatsApp automations</h4>Kept as tested code, with a person deciding what is sent.</li>
-<li><h4>Agent apps</h4>Small and working, delivered quickly so you can try the idea early.</li>
-<li><h4>Integrations</h4>Connecting the systems you already use.</li>
-<li><h4>Agent security demos and workshops</h4>Sessions like <a href="#hack-the-agent">Hack the Agent</a>.</li>
+<p class="small">Kinds of freelance work he takes on:</p>
+<ul class="kinds one">
+<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="7" height="6" rx="1.5"/><rect x="14" y="14" width="7" height="6" rx="1.5"/><path d="M10 7h4a3 3 0 0 1 3 3v4"/></g></svg><div><h4>n8n and WhatsApp automations</h4>Kept as tested code, with a person deciding what is sent.</div></li>
+<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 9h16"/><path d="M8 14h5"/></g></svg><div><h4>Agent apps</h4>Small and working, delivered quickly so you can try the idea early.</div></li>
+<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15l6-6"/><path d="M10 6l1-1a4 4 0 0 1 6 6l-1 1"/><path d="M14 18l-1 1a4 4 0 0 1-6-6l1-1"/></g></svg><div><h4>Integrations</h4>Connecting the systems you already use.</div></li>
+<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></g></svg><div><h4>Agent security demos and workshops</h4>Sessions like <a href="#hack-the-agent">Hack the Agent</a>.</div></li>
 </ul>
 <p class="small">No prices are listed. Terms are agreed with José directly.</p>
 </div>
