@@ -31,7 +31,7 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - The home page is written in the first person, at José's word. `index.md`, `llms.txt` and the agents page stay in the third person, since agents read them.
 
-- The home page says where José works now (voicedebrief.ai, itwithus.com and promptugal.news) and names RiskMandate as the startup team he was with at Web Summit, with a link. All three were supplied by José on 2026-11-17; this agent could open promptugal.news but not riskmandate.ai, voicedebrief.ai or itwithus.com (the session's network policy refuses them), and José's role at each is not stated.
+- The home page says where José works now (voicedebrief.ai, itwithus.com and promptugal.news) and names RiskMandate as the startup team he was with at Web Summit, with a link. All three were supplied by José on 2026-11-17; José gave his roles: co-founder of VoiceDebrief and of ITwithUs, developer at PrompTugal.news. This agent later opened voicedebrief.ai, itwithus.com and promptugal.news; none names him on its front page. riskmandate.ai stayed refused by the session's network policy.
 
 Does not exist:
 

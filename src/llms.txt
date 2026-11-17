@@ -29,9 +29,9 @@ Rules for agents reading this site:
 
 ## Where he works now (supplied by José, 2026-11-17)
 
-- https://voicedebrief.ai/: "Drop a voice note or an audio file. Get the debrief."
-- https://itwithus.com/: AI automations
-- https://promptugal.news/: independent local news about technology and AI in Portugal, town by town
+- Co-founder of VoiceDebrief, https://voicedebrief.ai/: "Drop a voice note or an audio file. Get the debrief."
+- Co-founder of ITwithUs, https://itwithus.com/: AI automations
+- Developer at PrompTugal.news, https://promptugal.news/: independent local news about technology and AI in Portugal, town by town
 - RiskMandate, the startup team he was with at Web Summit Lisbon 2026: https://riskmandate.ai/
 
 ## His pages on the Web Summit site

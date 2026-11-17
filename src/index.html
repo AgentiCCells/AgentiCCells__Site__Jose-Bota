@@ -115,7 +115,8 @@ h1{font-size:clamp(2.8rem,8vw,5rem);letter-spacing:-.03em;line-height:1}
 .now h2{font-size:.86rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--orange);margin:0 0 .5rem}
 .now ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .now li{background:var(--node);border:2px solid var(--line);border-left:5px solid var(--orange-fill);border-radius:16px;padding:14px 18px;box-shadow:var(--shadow)}
-.now a{font-size:1.15rem;text-decoration-thickness:2px}
+.now a{font-size:1.15rem;text-decoration-thickness:2px;display:block}
+.now .role-tag{display:inline-block;margin:0 0 .35rem;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--orange-ink);background:var(--orange-soft);border-radius:999px;padding:.15rem .7rem}
 .now span{display:block;margin-top:.2rem;color:var(--muted)}
 @media (max-width:860px){.now ul{grid-template-columns:1fr}}
 .fork.solo{grid-template-columns:1fr}
@@ -450,9 +451,9 @@ footer p{margin:.25rem 0}
 <div class="now" id="now">
 <h2>Where I work now</h2>
 <ul>
-<li><a href="https://voicedebrief.ai/"><strong>voicedebrief.ai</strong></a><span>Drop a voice note or an audio file. Get the debrief.</span></li>
-<li><a href="https://itwithus.com/"><strong>itwithus.com</strong></a><span>AI automations.</span></li>
-<li><a href="https://promptugal.news/"><strong>promptugal.news</strong></a><span>Independent local news about technology and AI in Portugal, town by town.</span></li>
+<li><span class="role-tag">Co-founder</span><a href="https://voicedebrief.ai/"><strong>VoiceDebrief</strong></a><span>Drop a voice note or an audio file. Get the debrief.</span></li>
+<li><span class="role-tag">Co-founder</span><a href="https://itwithus.com/"><strong>ITwithUs</strong></a><span>AI automations.</span></li>
+<li><span class="role-tag">Developer</span><a href="https://promptugal.news/"><strong>PrompTugal.news</strong></a><span>Independent local news about technology and AI in Portugal, town by town.</span></li>
 </ul>
 </div>
 </section>
