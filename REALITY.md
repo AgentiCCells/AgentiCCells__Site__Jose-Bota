@@ -39,6 +39,8 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - Two photos, supplied by José on 2026-11-17, in `src/media/photos/`: his portrait (cropped; its metadata removed) and a photo of him with the RiskMandate team at Web Summit. On the team photo José said "run the picture of the team, no problem"; five other people are in it, their name badges are blurred so that no one is named, and this agent has no record of their agreement beyond José's word.
 
+- The Web Summit section is headed "I ran the technical side for RiskMandate at Web Summit 2026", with the two figures on the left and the team photo as a small box on the right. "Where I work now" is three compact boxes.
+
 Does not exist:
 
 - No video, and no screenshots of his apps.
