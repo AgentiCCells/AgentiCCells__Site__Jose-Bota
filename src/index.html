@@ -161,7 +161,10 @@ h1{font-size:clamp(2.8rem,8vw,5rem);letter-spacing:-.03em;line-height:1}
 .roles span{color:var(--muted)}
 .roles li.wide{border-left-width:2px;background:transparent;border-style:dashed}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:.45rem}
-.pair{align-items:start}
+.pair{align-items:stretch}
+.pair .node{display:flex;flex-direction:column}.pair .node>p:last-child{margin-top:auto;padding-top:.4rem}
+.part{margin-top:1.4rem;padding-top:1.3rem;border-top:2px dashed var(--line)}
+.part>:last-child{margin-bottom:0}
 .pair .node{margin-bottom:0}
 .see{margin:1.1rem 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .8rem}
 .mini{margin-top:.8rem}
@@ -428,18 +431,6 @@ footer p{margin:.25rem 0}
 <p>The technical side for a team at Web Summit Lisbon 2026, run with his own team of agents. Each figure links to its public source.</p>
 </div>
 
-<article class="node" id="web-summit">
-<div class="node-top"><span class="badge auto">Automation</span><span class="built">Web Summit Lisbon 2026, 9 to 12 November</span></div>
-<h3>Web Summit: the channels</h3>
-<p>José took the technical side for the RiskMandate team: its automation, its messaging channels and its agents. His brief: "Make the team's machinery run". <a class="ref" href="#src-3" aria-label="Source 3">[3]</a> <a class="ref" href="#src-4" aria-label="Source 4">[4]</a> In the team's own summary: "José Bota, the channels". <a class="ref" href="#src-2" aria-label="Source 2">[2]</a></p>
-<p>He had built a WhatsApp flow in n8n, and the team asked to use it to broadcast updates to the team's WhatsApp group.</p>
-<ol class="chain mini" aria-label="The flow, as the site describes it">
-<li>His WhatsApp flow<small>built in n8n</small></li>
-<li>The team's WhatsApp group<small>updates</small></li>
-</ol>
-<p class="todo-text" style="margin-top:1rem"><span class="label todo" style="font-style:normal">To follow</span> The flow is internal to the team; a write-up or screenshots are to follow, with José's approval.</p>
-</article>
-
 <article class="node" id="agent-team">
 <div class="node-top"><span class="badge team">Agent team</span><span class="built">He runs this team for his own work</span></div>
 <h3>His agent team</h3>
@@ -455,6 +446,17 @@ footer p{margin:.25rem 0}
 <li class="wide"><span>And six more:</span><span class="chips"><b>conductor</b><b>designer</b><b>CRM agent</b><b>vault agent</b><b>accountant</b><b>dashboard agent</b></span></li>
 </ul>
 <p class="see">See it on the Web Summit site: <a class="btn solid ext" href="https://web-summit.sgit.ai/people/jose/app/index.html#stand">Open his command centre</a> <span>or read <a href="https://web-summit.sgit.ai/team/jose/index.html">his team page</a> and <a href="https://web-summit.sgit.ai/people/jose/index.md">his people page</a>.</span></p>
+<div class="part" id="web-summit">
+<div class="node-top"><span class="badge auto">Automation</span><span class="built">Web Summit Lisbon 2026, 9 to 12 November</span></div>
+<h3>Web Summit: the channels</h3>
+<p>José took the technical side for the RiskMandate team: its automation, its messaging channels and its agents. His brief: "Make the team's machinery run". <a class="ref" href="#src-3" aria-label="Source 3">[3]</a> <a class="ref" href="#src-4" aria-label="Source 4">[4]</a> In the team's own summary: "José Bota, the channels". <a class="ref" href="#src-2" aria-label="Source 2">[2]</a></p>
+<p>He had built a WhatsApp flow in n8n, and the team asked to use it to broadcast updates to the team's WhatsApp group.</p>
+<ol class="chain mini" aria-label="The flow, as the site describes it">
+<li>His WhatsApp flow<small>built in n8n</small></li>
+<li>The team's WhatsApp group<small>updates</small></li>
+</ol>
+<p class="todo-text" style="margin-top:1rem"><span class="label todo" style="font-style:normal">To follow</span> The flow is internal to the team; a write-up or screenshots are to follow, with José's approval.</p>
+</div>
 </article>
 </section>
 
@@ -484,20 +486,19 @@ footer p{margin:.25rem 0}
 <div class="stage-head">
 <span class="port" aria-hidden="true"></span>
 <h2 id="h-apps">Also built: two agent apps in a day</h2>
-<p>Both from one day at the Vibathon Algarve 2026, at the University of the Algarve, in Lovable, and both about what an AI agent can reach and what stops it: prompt injection, tool allowlists, server-side authorisation, output filters, and checking an agent against what its owner authorised. <a class="ref" href="#src-1" aria-label="Source 1">[1]</a> Both were offered as stand demos at Web Summit. <a class="ref" href="#src-4" aria-label="Source 4">[4]</a> <a class="ref" href="#src-5" aria-label="Source 5">[5]</a></p>
+<p>Designed and built by José in one day at the Vibathon Algarve 2026, at the University of the Algarve, in Lovable. Both are about what an AI agent can reach and what stops it, and both were offered as stand demos at Web Summit. <a class="ref" href="#src-1" aria-label="Source 1">[1]</a> <a class="ref" href="#src-4" aria-label="Source 4">[4]</a> <a class="ref" href="#src-5" aria-label="Source 5">[5]</a></p>
 </div>
 <div class="fork pair">
 <article class="node" id="hack-the-agent">
 <div class="node-top"><span class="badge app">Agent app</span></div>
 <h3>Hack the Agent</h3>
-<p>A live, multiplayer game that teaches prompt injection, designed and built by José. A host opens a session, the audience joins by QR code on their phones, and players try to trick five fictional agents, each better defended than the last: a system prompt only; rules; indirect injection through an inbox; a refund desk with server-side checks; and a hardened agent with an instruction hierarchy, a tool allowlist, server-side authorisation and an output filter.</p>
-<p>It shows a trace of every tool call, a live request budget, rate limits, leaderboards and a presentation mode. In the newsroom's review, all three live attempts to break it were refused, and the output filter caught the last practice attempt. <a class="ref" href="#src-1" aria-label="Source 1">[1]</a></p>
+<p>A live, multiplayer game that teaches prompt injection. Players try to trick five fictional agents, each better defended than the last. <a class="ref" href="#src-1" aria-label="Source 1">[1]</a></p>
 <p><a class="btn ext" href="https://agent-defense-arena.lovable.app/">Try Hack the Agent</a></p>
 </article>
 <article class="node" id="reachcheck">
 <div class="node-top"><span class="badge app">Agent app</span></div>
 <h3>ReachCheck</h3>
-<p>Designed and built by José the same day. It checks an agent's configuration against what its owner authorised, and it runs entirely in the browser. <a class="ref" href="#src-1" aria-label="Source 1">[1]</a></p>
+<p>Checks an agent's configuration against what its owner authorised, and runs entirely in the browser. <a class="ref" href="#src-1" aria-label="Source 1">[1]</a></p>
 <p><a class="btn ext" href="https://reach-check-agent.lovable.app/">Try ReachCheck</a></p>
 </article>
 </div>
