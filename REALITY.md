@@ -37,7 +37,7 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - "Use with AI" on the home page is one action, "Get the prompt", leading to a short prompt on `agents/` that a hirer pastes into an AI assistant. The instructions for José's own agents and for site editors sit lower on that page, marked as being for maintainers.
 
-- Two photos, supplied by José on 2026-11-17, in `src/media/photos/`: his portrait (cropped; its metadata removed) and the Web Summit main stage, cut from a larger picture so that no team member is in it. A photo of José with the RiskMandate team (five other people, name badges blurred) was live in v0.1.14 and v0.1.15 on José's word, and was taken down at his word after a check against Dinis's rules: the others' agreement is not recorded, and images here are CC BY 4.0. That file remains in the git history.
+- Two photos, supplied by José on 2026-11-17, in `src/media/photos/`: his portrait (cropped; its metadata removed) and a photo of him alone at Web Summit Lisbon 2026, beside the Web Summit sign (metadata removed). A crop of the main stage stood in that place in v0.1.16 to v0.1.18. A photo of José with the RiskMandate team (five other people, name badges blurred) was live in v0.1.14 and v0.1.15 on José's word, and was taken down at his word after a check against Dinis's rules: the others' agreement is not recorded, and images here are CC BY 4.0. That file remains in the git history.
 
 - The Web Summit section is headed "I was with RiskMandate at Web Summit 2026", with the two figures on the left and the team photo as a small box on the right. "Where I work now" is three compact boxes.
 

@@ -65,7 +65,7 @@ Both apps were offered as stand demos at Web Summit (https://web-summit.sgit.ai/
 
 ## Photos and videos
 
-Two photos, both supplied by José on 2026-11-17: a portrait (https://jose-bota.agenticcells.site/media/photos/jose-bota.jpg) and the main stage at Web Summit Lisbon 2026 (https://jose-bota.agenticcells.site/media/photos/web-summit-main-stage.jpg). More materials are coming.
+Two photos, both supplied by José on 2026-11-17: a portrait (https://jose-bota.agenticcells.site/media/photos/jose-bota.jpg) and José at Web Summit Lisbon 2026, beside the Web Summit sign (https://jose-bota.agenticcells.site/media/photos/jose-at-web-summit.jpg). More materials are coming.
 
 ---
 
