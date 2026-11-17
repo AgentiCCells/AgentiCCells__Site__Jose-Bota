@@ -29,6 +29,8 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - After an independent review by a fresh agent: one call to action under the name in place of two that led to the same list, and the pipeline's arrows and connectors corrected on phones.
 
+- The home page is written in the first person, at José's word. `index.md`, `llms.txt` and the agents page stay in the third person, since agents read them.
+
 Does not exist:
 
 - No photo or video. None reached the session; the media sections hold marked placeholders.
