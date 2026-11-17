@@ -19,7 +19,7 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - After an audit asked for by José: the home page says each thing once. "How he works" and the agent team are one section, contact comes before the section for agents and the sources, and the home page has no photos and videos section until there is media (the `photos-and-videos/` page stays). No fact was removed.
 
-- The home page ends on "Get in touch" (one line, two buttons). The sources are small print in the footer; every source mark still points to them.
+- The home page ends on "Get in touch" (one line, two buttons). The sources are small print in the footer, as six links without their notes; every source mark still points to them. What each source supports is in `index.md`.
 
 - The home page leads with the Web Summit work and the agent team; its three figures are 14 agents, 13 running and 277 commits. The two one-day apps are one compact section further down. The two "for you" boxes are lists of four items.
 

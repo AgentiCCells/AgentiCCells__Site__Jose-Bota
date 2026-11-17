@@ -86,7 +86,7 @@ main::before{content:"";position:absolute;left:calc(var(--gutter) + var(--wire-x
 .facts dt:first-child{margin-top:0}
 .facts dd{margin:0}
 .facts dd>.btn{margin-top:.25rem}
-.ref{font-size:.74em;font-weight:700;text-decoration:none;vertical-align:super;line-height:0;padding:0 .1em;white-space:nowrap}
+.ref{font-size:max(.74em,12px);font-weight:700;text-decoration:none;vertical-align:super;line-height:0;padding:0 .1em;white-space:nowrap}
 .ref:hover{text-decoration:underline}
 .small{font-size:.92rem;color:var(--muted)}
 .todo-text{color:var(--muted);font-style:italic}
@@ -125,7 +125,7 @@ h1{font-size:clamp(2.8rem,8vw,5rem);letter-spacing:-.03em;line-height:1}
 .now ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 .now li{background:var(--node);border:2px solid var(--line);border-left:4px solid var(--orange-fill);border-radius:12px;padding:8px 12px 9px;display:flex;flex-wrap:wrap;align-items:baseline;align-content:flex-start;gap:.1rem .5rem}
 .now a{font-size:1rem;text-decoration-thickness:1.5px}
-.now .role-tag{font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--orange-ink);background:var(--orange-soft);border-radius:999px;padding:.08rem .5rem}
+.now .role-tag{font-size:.75rem;font-weight:800;letter-spacing:.01em;text-transform:uppercase;color:var(--orange-ink);background:var(--orange-soft);border-radius:999px;padding:.05rem .4rem;white-space:nowrap}
 .now .what{flex-basis:100%;color:var(--muted);font-size:.84rem;line-height:1.35}
 @media (max-width:860px){.now ul{grid-template-columns:1fr;gap:8px}}
 .fork.solo{grid-template-columns:1fr}
@@ -258,13 +258,17 @@ h1{font-size:clamp(2.8rem,8vw,5rem);letter-spacing:-.03em;line-height:1}
 .btn.ext::after{content:"\2197"}
 .btn:hover{background:var(--teal-soft)}.btn.solid:hover{background:var(--teal-ink)}
 .btn:focus-visible{outline:3px solid var(--orange-fill);outline-offset:3px}
-.notes{margin:0 0 1.2rem;padding:0 0 1.2rem;border-bottom:1px solid var(--line)}
-.notes h2{font-size:.86rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin:0 0 .3rem}
-.notes>p{margin:0 0 .5rem;font-size:.88rem}
-.notes .sources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.1rem 2rem;margin:0;padding:0}
-.notes .sources li{font-size:.88rem;margin:.3rem 0;padding-left:2.1rem}
-.notes .sources span{font-size:.84rem}
-@media (max-width:760px){.notes .sources{grid-template-columns:1fr}}
+.notes{margin:0 0 .9rem;padding:0 0 .9rem;border-bottom:1px solid var(--line)}
+.notes h2{display:inline;font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin:0}
+.notes>p{display:inline;margin:0 0 0 .5rem;font-size:.75rem}
+.notes .sources{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 1.4rem;margin:.45rem 0 0;padding:0}
+.notes .sources li{font-size:.75rem;line-height:1.4;margin:0;padding:.28rem 0 .28rem 1.7rem}
+.notes .sources li::before{top:.28rem}
+.notes .sources a{display:inline-block;padding:.2rem 0;margin:-.2rem 0}
+.notes .sources li::before{font-weight:700}
+.notes .sources span{display:none}
+@media (max-width:900px){.notes .sources{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.notes .sources{grid-template-columns:1fr}}
 .sources{list-style:none;counter-reset:s}
 .sources li{position:relative;padding-left:2.6rem;margin:.65rem 0;font-size:.95rem;line-height:1.5}
 .sources li::before{counter-increment:s;content:"[" counter(s) "]";position:absolute;left:0;top:0;font-weight:800;color:var(--teal)}
@@ -589,7 +593,7 @@ footer p{margin:.25rem 0}
 <div class="inner">
 <section class="notes" id="sources" aria-labelledby="h-sources">
 <h2 id="h-sources">Sources</h2>
-<p>Public pages, each read 2026-11-16. The numbers in square brackets on this page point here.</p>
+<p>Public pages, each read 2026-11-16.</p>
 <ol class="sources">
 <li id="src-1"><a href="https://newsroom.sgit.ai/articles/jose-botas-two-agent-apps.md">Newsroom review of José Bota's two agent apps</a><span>Hack the Agent, ReachCheck, and how I work.</span></li>
 <li id="src-2"><a href="https://newsroom.sgit.ai/articles/ten-days-at-web-summit.md">Ten days at Web Summit</a><span>The 277 commits; "José Bota, the channels"; the Web Summit work.</span></li>
