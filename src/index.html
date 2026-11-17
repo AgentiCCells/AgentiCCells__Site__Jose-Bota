@@ -151,8 +151,12 @@ h1{font-size:clamp(2.8rem,8vw,5rem);letter-spacing:-.03em;line-height:1}
 .through{border-style:dashed;border-color:var(--teal)}
 
 /* agent team */
-.count{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.2rem;margin:.2rem 0 .8rem}
-.count strong{font-size:1.5rem;font-weight:800;line-height:1.2}
+.count{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:.5rem 0 1.1rem}
+.count p{margin:0;padding:14px 18px;border-radius:14px;background:var(--teal-soft)}
+.count-note{display:block;color:var(--teal-ink);font-weight:600;margin-top:.15rem}
+.count .dots{margin-top:.55rem}
+@media (max-width:640px){.count{grid-template-columns:1fr}}
+.count strong{display:block;font-size:clamp(1.7rem,3.6vw,2.3rem);font-weight:800;line-height:1.1;color:var(--teal-ink)}
 .dots{display:flex;flex-wrap:wrap;gap:6px}
 .dots i{width:16px;height:16px;border-radius:50%;border:2px solid var(--teal);background:var(--teal)}
 .dots i.off{background:transparent;border-color:var(--muted)}
@@ -283,7 +287,7 @@ footer p{margin:.25rem 0}
 @media (max-width:760px){.kinds.offer{grid-template-columns:1fr}}
 .band{background:var(--teal-ink);color:#fff;box-shadow:0 0 0 100vmax var(--teal-ink);clip-path:inset(0 -100vmax);padding:44px 0 22px;margin:0 0 56px}
 .band .stage-head p:last-child{color:#d6ebe8}
-.band .ref,.band .stage-head a{color:#fff}
+.band .stage-head .ref,.band .stage-head a{color:#fff}
 .band .port{background:var(--teal-ink);border-color:#fff}
 .band .pipe>li:not(.person){color:var(--ink)}
 .band .pipe-row::before{background:rgba(255,255,255,.45)}
@@ -406,7 +410,6 @@ footer p{margin:.25rem 0}
 <li><a href="#start">Start</a></li>
 <li><a href="#work">Web Summit</a></li>
 <li><a href="#how-he-works">How he works</a></li>
-<li><a href="#apps">Apps</a></li>
 <li><a href="#for-you">For you</a></li>
 <li><a href="#use-with-ai">Use with AI</a></li>
 <li><a href="#contact">Contact</a></li>
@@ -430,7 +433,6 @@ footer p{margin:.25rem 0}
 <a class="branch main" href="#full-time"><strong>Hiring for an AI role?</strong><span>What José brings to a full-time team.</span><span class="go">Follow this branch</span></a>
 <a class="branch" href="#projects"><strong>Have an automation project?</strong><span>The kinds of work he can take on.</span><span class="go">Follow this branch</span></a>
 </div>
-<p class="headline"><strong>14 agents</strong> on his team made <strong>277 commits</strong> on the Web Summit team's site. <a class="ref" href="#src-6" aria-label="Source 6">[6]</a> <a class="ref" href="#src-2" aria-label="Source 2">[2]</a></p>
 </section>
 
 <section class="stage" id="work" aria-labelledby="h-work">
@@ -443,10 +445,10 @@ footer p{margin:.25rem 0}
 <article class="node" id="agent-team">
 <h3>His agent team</h3>
 <div class="count">
-<strong>14 agents, 13 running</strong> <a class="ref" href="#src-6" aria-label="Source 6">[6]</a>
-<span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="off"></i></span>
+<p><strong>14 agents</strong><span class="count-note">13 running <a class="ref" href="#src-6" aria-label="Source 6">[6]</a></span><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="off"></i></span></p>
+<p><strong>277 commits</strong><span class="count-note">by his agents on the Web Summit team's site <a class="ref" href="#src-2" aria-label="Source 2">[2]</a></span></p>
 </div>
-<p>José runs this team for his own work, and each agent has one job. On the Web Summit team's site they made 277 commits. <a class="ref" href="#src-2" aria-label="Source 2">[2]</a></p>
+<p>José runs this team for his own work, and each agent has one job.</p>
 <p>Three of them are the checks under <a href="#how-he-works">How he works</a>: the automation agent, the code reviewer and the security watcher. The others are a developer for automations and integrations (n8n, WhatsApp, the site), a helper that gets anyone stuck on setup unstuck, a sales coach that trains his RiskMandate pitch by role-play, and a conductor, a designer, a CRM agent, a vault agent, an accountant and a dashboard agent.</p>
 <p class="see"><a class="btn solid ext" href="https://web-summit.sgit.ai/people/jose/app/index.html#stand">Open his command centre</a> <span>or read <a href="https://web-summit.sgit.ai/team/jose/index.html">his team page</a> and <a href="https://web-summit.sgit.ai/people/jose/index.md">his people page</a>.</span></p>
 <div class="part" id="web-summit">
@@ -469,7 +471,7 @@ footer p{margin:.25rem 0}
 </div>
 <div class="pipe-row">
 <ol class="chain pipe">
-<li><span class="n" aria-hidden="true">1</span><h3>He builds fast</h3><p><a href="#apps">Two working agent apps</a> in a day.</p></li>
+<li><span class="n" aria-hidden="true">1</span><h3>He builds fast</h3><p>Two working agent apps in a day: <a class="ref" href="#src-1" aria-label="Source 1">[1]</a> <a href="https://agent-defense-arena.lovable.app/">Hack the Agent</a> and <a href="https://reach-check-agent.lovable.app/">ReachCheck</a>.</p></li>
 <li><span class="n" aria-hidden="true">2</span><h3>Automations are tested code</h3><p>His n8n flows are kept as tested code, so a flow can be read, reviewed and checked like any other program.</p></li>
 <li><span class="n" aria-hidden="true">3</span><h3>A reviewer on every change</h3><p>A code-review agent reviews every diff before it is pushed.</p></li>
 </ol>
@@ -483,28 +485,6 @@ footer p{margin:.25rem 0}
 </div>
 </section>
 
-<section class="stage" id="apps" aria-labelledby="h-apps">
-<div class="stage-head">
-<span class="port" aria-hidden="true"></span>
-<h2 id="h-apps">Also built: two agent apps in a day</h2>
-<p>Designed and built by José in one day at the Vibathon Algarve 2026, at the University of the Algarve, in Lovable. Both are about what an AI agent can reach and what stops it, and both were offered as stand demos at Web Summit. <a class="ref" href="#src-1" aria-label="Source 1">[1]</a> <a class="ref" href="#src-4" aria-label="Source 4">[4]</a> <a class="ref" href="#src-5" aria-label="Source 5">[5]</a></p>
-</div>
-<div class="fork pair">
-<article class="node" id="hack-the-agent">
-<div class="node-top"><span class="badge app">Agent app</span></div>
-<h3>Hack the Agent</h3>
-<p>A live, multiplayer game that teaches prompt injection. Players try to trick five fictional agents, each better defended than the last. <a class="ref" href="#src-1" aria-label="Source 1">[1]</a></p>
-<p><a class="btn ext" href="https://agent-defense-arena.lovable.app/">Try Hack the Agent</a></p>
-</article>
-<article class="node" id="reachcheck">
-<div class="node-top"><span class="badge app">Agent app</span></div>
-<h3>ReachCheck</h3>
-<p>Checks an agent's configuration against what its owner authorised, and runs entirely in the browser. <a class="ref" href="#src-1" aria-label="Source 1">[1]</a></p>
-<p><a class="btn ext" href="https://reach-check-agent.lovable.app/">Try ReachCheck</a></p>
-</article>
-</div>
-</section>
-
 <section class="stage" id="for-you" aria-labelledby="h-you">
 <div class="stage-head">
 <span class="port" aria-hidden="true"></span>
@@ -514,7 +494,7 @@ footer p{margin:.25rem 0}
 <ul class="kinds one offer">
 <li class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L5 13h6l-1 8 8-10h-6z"/></g></svg><div><h3>Agent apps</h3>Small and working, from idea to something people can use, delivered quickly so you can try the idea early: two in a day at the Vibathon Algarve 2026.</div></li>
 <li class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15l6-6"/><path d="M10 6l1-1a4 4 0 0 1 6 6l-1 1"/><path d="M14 18l-1 1a4 4 0 0 1-6-6l1-1"/></g></svg><div><h3>Automations and integrations</h3>n8n and WhatsApp flows kept as tested code, with a person deciding what is sent, and connections between the systems you already use. He ran the RiskMandate team's channels and agents at Web Summit Lisbon 2026.</div></li>
-<li class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></g></svg><div><h3>Agent security</h3>Prompt injection, tool allowlists, server-side authorisation and output filters in practice, and demos and workshops like <a href="#hack-the-agent">Hack the Agent</a>.</div></li>
+<li class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></g></svg><div><h3>Agent security</h3>Prompt injection, tool allowlists, server-side authorisation and output filters in practice, and demos and workshops like <a href="https://agent-defense-arena.lovable.app/">Hack the Agent</a>.</div></li>
 <li class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g></svg><div><h3>A team of agents, kept in check</h3>Under review and watch, with tested automations and no unsupervised sending.</div></li>
 </ul>
 <p class="small">No prices are listed. Terms are agreed with José directly.</p>

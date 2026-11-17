@@ -13,7 +13,7 @@ Rules for agents reading this site:
 ## Pages
 
 - [Home, as Markdown](https://jose-bota.agenticcells.site/index.md): summary, his work, how he works, with sources. The master copy of the facts
-- [The home page](https://jose-bota.agenticcells.site/): one page with every section: [his Web Summit work and agent team](https://jose-bota.agenticcells.site/#work), [two agent apps](https://jose-bota.agenticcells.site/#apps), [how he works](https://jose-bota.agenticcells.site/#how-he-works), [what he can do for you](https://jose-bota.agenticcells.site/#for-you), [contact](https://jose-bota.agenticcells.site/#contact) and [sources](https://jose-bota.agenticcells.site/#sources)
+- [The home page](https://jose-bota.agenticcells.site/): one page with every section: [his Web Summit work and agent team](https://jose-bota.agenticcells.site/#work), [how he works](https://jose-bota.agenticcells.site/#how-he-works), [what he can do for you](https://jose-bota.agenticcells.site/#for-you), [contact](https://jose-bota.agenticcells.site/#contact) and [sources](https://jose-bota.agenticcells.site/#sources)
 - [Photos and videos](https://jose-bota.agenticcells.site/photos-and-videos/): more materials are coming; none is on the site yet
 - [Use with AI](https://jose-bota.agenticcells.site/agents/): instructions for agents acting for a hirer or client, for José, and for a site editor, and how the site is put together
 - The old addresses /work/, /how-he-works/ and /for-you/ forward to the matching section of the home page

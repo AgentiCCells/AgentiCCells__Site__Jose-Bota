@@ -25,6 +25,8 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - After a design review asked for by José: the header is only the section buttons; one line replaces the three figure boxes; the agent team and "Web Summit: the channels" share one box; "How he works" sits on a full-width band; the two apps are two lines each; and "What he can do for you" is one list of four. The detail of Hack the Agent (its levels, what it shows, the newsroom's review) is in `index.md` only.
 
+- The two one-day apps have no section on the home page: they are two links under "He builds fast". Their description is in `index.md` only. The 14 agents and 277 commits are stated once, inside the agent team box.
+
 Does not exist:
 
 - No photo or video. None reached the session; the media sections hold marked placeholders.
