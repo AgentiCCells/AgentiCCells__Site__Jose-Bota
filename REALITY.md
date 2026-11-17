@@ -21,6 +21,8 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - The home page ends on "Get in touch" (one line, two buttons). The sources are small print in the footer; every source mark still points to them.
 
+- The home page leads with the Web Summit work and the agent team; its three figures are 14 agents, 13 running and 277 commits. The two one-day apps are one compact section further down. The two "for you" boxes are lists of four items.
+
 Does not exist:
 
 - No photo or video. None reached the session; the media sections hold marked placeholders.

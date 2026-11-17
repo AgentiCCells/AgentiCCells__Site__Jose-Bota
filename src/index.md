@@ -6,7 +6,22 @@
 - Have an automation project? See [What he can do for you](https://jose-bota.agenticcells.site/#projects).
 - Contact (supplied by José, 2026-11-16): josebota@gmail.com, https://www.linkedin.com/in/jbota/
 
-## Selected work
+## Work
+
+### Web Summit Lisbon 2026: automation and messaging channels
+
+At Web Summit Lisbon 2026 (9 to 12 November), for the RiskMandate team, José took the technical side: automation, messaging channels and the agents ("Make the team's machinery run"). He had built a WhatsApp flow in n8n, and the team asked to use it to broadcast updates to the team's WhatsApp group. In the team's own summary: "José Bota, the channels".
+
+- Sources: https://web-summit.sgit.ai/team/jose/index.md, https://web-summit.sgit.ai/brief-jose/index.md, https://newsroom.sgit.ai/articles/ten-days-at-web-summit.md (each read 2026-11-16)
+
+### His agent team
+
+14 agents, 13 running (source: https://web-summit.sgit.ai/people/jose/index.md, read 2026-11-16), including: an automation agent that keeps the n8n flows as tested code and never sends; a developer for automations and integrations (n8n, WhatsApp, the site); a code reviewer that reviews every diff before it is pushed; a read-only security watcher that reports who committed what; a helper that gets anyone stuck on setup unstuck; a sales coach that trains his RiskMandate pitch by role-play; a conductor, a designer, a CRM agent, a vault agent, an accountant and a dashboard agent.
+
+277 commits by his agents on the team's site (source: https://newsroom.sgit.ai/articles/ten-days-at-web-summit.md, read 2026-11-16).
+
+- His command centre on the Web Summit site: https://web-summit.sgit.ai/people/jose/app/index.html#stand
+- His team page: https://web-summit.sgit.ai/team/jose/index.html
 
 ### Hack the Agent
 
@@ -23,21 +38,6 @@ Built the same day, also in Lovable. Checks an agent's configuration against wha
 - Source: https://newsroom.sgit.ai/articles/jose-botas-two-agent-apps.md (read 2026-11-16)
 
 Both apps were offered as stand demos at Web Summit (https://web-summit.sgit.ai/brief-jose/index.md, https://web-summit.sgit.ai/meet/jose/index.md).
-
-### Web Summit Lisbon 2026: automation and messaging channels
-
-At Web Summit Lisbon 2026 (9 to 12 November), for the RiskMandate team, José took the technical side: automation, messaging channels and the agents ("Make the team's machinery run"). He had built a WhatsApp flow in n8n, and the team asked to use it to broadcast updates to the team's WhatsApp group. In the team's own summary: "José Bota, the channels".
-
-- Sources: https://web-summit.sgit.ai/team/jose/index.md, https://web-summit.sgit.ai/brief-jose/index.md, https://newsroom.sgit.ai/articles/ten-days-at-web-summit.md (each read 2026-11-16)
-
-### His agent team
-
-14 agents, 13 running (source: https://web-summit.sgit.ai/people/jose/index.md, read 2026-11-16), including: an automation agent that keeps the n8n flows as tested code and never sends; a developer for automations and integrations (n8n, WhatsApp, the site); a code reviewer that reviews every diff before it is pushed; a read-only security watcher that reports who committed what; a helper that gets anyone stuck on setup unstuck; a sales coach that trains his RiskMandate pitch by role-play; a conductor, a designer, a CRM agent, a vault agent, an accountant and a dashboard agent.
-
-277 commits by his agents on the team's site (source: https://newsroom.sgit.ai/articles/ten-days-at-web-summit.md, read 2026-11-16).
-
-- His command centre on the Web Summit site: https://web-summit.sgit.ai/people/jose/app/index.html#stand
-- His team page: https://web-summit.sgit.ai/team/jose/index.html
 
 ## How he works
 
