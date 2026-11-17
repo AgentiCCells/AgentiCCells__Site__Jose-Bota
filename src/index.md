@@ -6,6 +6,15 @@
 - Have an automation project? See [What he can do for you](https://jose-bota.agenticcells.site/#projects).
 - Contact (supplied by José, 2026-11-16): josebota@gmail.com, https://www.linkedin.com/in/jbota/
 
+## Where he works now
+
+Supplied by José, 2026-11-17:
+
+- voicedebrief.ai (https://voicedebrief.ai/): "Drop a voice note or an audio file. Get the debrief."
+- itwithus.com (https://itwithus.com/): AI automations.
+
+He was at Web Summit Lisbon 2026 with the RiskMandate startup team (https://riskmandate.ai/).
+
 ## Work
 
 ### Web Summit Lisbon 2026: automation and messaging channels

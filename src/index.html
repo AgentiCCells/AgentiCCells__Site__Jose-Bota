@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>José Bota, AI automation expert</title>
-<meta name="description" content="José Bota, AI automation expert: he builds agent apps, automations and integrations, fast, with security in mind.">
+<meta name="description" content="José Bota, AI automation expert. I build agent apps, automations and integrations, fast, with security in mind.">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#f4f1ea">
 <link rel="canonical" href="https://jose-bota.agenticcells.site/">
@@ -111,6 +111,13 @@ h1{font-size:clamp(2.8rem,8vw,5rem);letter-spacing:-.03em;line-height:1}
 .fork-lines{grid-column:1/-1;position:relative;height:38px}
 .fork-lines::before{content:"";position:absolute;left:calc(50% - 1px);top:0;width:2px;height:16px;background:var(--line)}
 .fork-lines::after{content:"";position:absolute;left:calc(25% - 6px);right:calc(25% - 6px);top:14px;bottom:0;border:2px solid var(--line);border-bottom:0;border-radius:14px 14px 0 0}
+.now{margin:0 0 6px}
+.now h2{font-size:.86rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--orange);margin:0 0 .5rem}
+.now ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.now li{background:var(--node);border:2px solid var(--line);border-left:5px solid var(--orange-fill);border-radius:16px;padding:14px 18px;box-shadow:var(--shadow)}
+.now a{font-size:1.15rem;text-decoration-thickness:2px}
+.now span{display:block;margin-top:.2rem;color:var(--muted)}
+@media (max-width:640px){.now ul{grid-template-columns:1fr}}
 .fork.solo{grid-template-columns:1fr}
 .fork.solo .fork-lines{height:22px}
 .fork.solo .fork-lines::before{height:22px}
@@ -440,13 +447,20 @@ footer p{margin:.25rem 0}
 <span class="fork-lines" aria-hidden="true"></span>
 <a class="branch main" href="#for-you"><strong>Hiring for an AI role, or have an automation project?</strong><span>See what I can do for you.</span></a>
 </div>
+<div class="now" id="now">
+<h2>Where I work now</h2>
+<ul>
+<li><a href="https://voicedebrief.ai/"><strong>voicedebrief.ai</strong></a><span>Drop a voice note or an audio file. Get the debrief.</span></li>
+<li><a href="https://itwithus.com/"><strong>itwithus.com</strong></a><span>AI automations.</span></li>
+</ul>
+</div>
 </section>
 
 <section class="stage" id="work" aria-labelledby="h-work">
 <div class="stage-head">
 <span class="port" aria-hidden="true"></span>
-<h2 id="h-work">At Web Summit: the team's machinery</h2>
-<p>I took the technical side for a team at Web Summit Lisbon 2026, and ran it with my own team of agents. Each figure links to its public source.</p>
+<h2 id="h-work">At Web Summit 2026, with the RiskMandate team</h2>
+<p>I was at Web Summit Lisbon 2026 with the <a href="https://riskmandate.ai/">RiskMandate</a> startup team, and ran its technical side with my own team of agents. Each figure links to its public source.</p>
 </div>
 
 <article class="node" id="agent-team">
@@ -460,8 +474,8 @@ footer p{margin:.25rem 0}
 <p class="see"><a class="btn solid ext" href="https://web-summit.sgit.ai/people/jose/app/index.html#stand">Open my command centre</a> <span>or read <a href="https://web-summit.sgit.ai/team/jose/index.html">my team page</a> and <a href="https://web-summit.sgit.ai/people/jose/index.md">my people page</a>.</span></p>
 <div class="part" id="web-summit">
 <h3>Web Summit: the channels</h3>
-<p>At Web Summit Lisbon 2026 (9 to 12 November), I took the technical side for the RiskMandate team: its automation, its messaging channels and its agents. My brief: "Make the team's machinery run". <a class="ref" href="#src-3" aria-label="Source 3">[3]</a> <a class="ref" href="#src-4" aria-label="Source 4">[4]</a> In the team's own summary: "José Bota, the channels". <a class="ref" href="#src-2" aria-label="Source 2">[2]</a></p>
-<p>I had built a WhatsApp flow in n8n, and the team asked to use it to broadcast updates to the team's WhatsApp group.</p>
+<p>At Web Summit Lisbon 2026 (9 to 12 November), I took the technical side for the RiskMandate startup team: its automation, its messaging channels and its agents. My brief: "Make the team's machinery run". <a class="ref" href="#src-3" aria-label="Source 3">[3]</a> <a class="ref" href="#src-4" aria-label="Source 4">[4]</a> In the team's own summary: "José Bota, the channels". <a class="ref" href="#src-2" aria-label="Source 2">[2]</a></p>
+<p>The team used a WhatsApp flow I had built in n8n to broadcast updates to its WhatsApp group.</p>
 <ol class="chain mini" aria-label="The flow, as the site describes it">
 <li>My WhatsApp flow<small>built in n8n</small></li>
 <li>The team's WhatsApp group<small>updates</small></li>
