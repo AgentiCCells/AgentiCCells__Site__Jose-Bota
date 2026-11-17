@@ -41,6 +41,8 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - The Web Summit section is headed "I was with RiskMandate at Web Summit 2026", with the two figures on the left and the team photo as a small box on the right. "Where I work now" is three compact boxes.
 
+- The instructions for site editors on `agents/` describe the site as it now is, and list `REALITY.md` among the files an editor may change (José said yes to its being updated, 2026-11-17).
+
 Does not exist:
 
 - No video, and no screenshots of his apps.

@@ -65,7 +65,7 @@ AgentiCCells/AgentiCCells__Site__Jose-Bota. Read CLAUDE.md and README.md
 first; their rules apply.
 
 - Change only files under src/, the "what_it_does" field of hub.json,
-  and README.md.
+  README.md and REALITY.md.
 - Static HTML and CSS, small plain JavaScript only if needed. Nothing
   loaded from other hosts: no scripts, styles, fonts, images or trackers.
 - Every page keeps a &lt;title&gt;, a &lt;meta name="description"&gt;,
@@ -78,7 +78,8 @@ first; their rules apply.
   then on the home page, so they never disagree.
 - Photos and videos go in only when José has supplied them and agreed,
   with their location data and other metadata removed.
-- Keep llms.txt and index.md in step with the HTML pages.
+- Keep llms.txt, index.md and this page in step with the home page, and
+  keep REALITY.md true.
 - Release with scripts/release.sh: the validator must print OK and the
   leak scan must be clean. José approves changes about him first.</code></pre>
 
@@ -87,7 +88,9 @@ first; their rules apply.
 
 <h4>The pages</h4>
 <ul class="ticks">
-<li><a href="../"><code>/</code></a>: the home page, <code>src/index.html</code>. One self-contained page with its own styles, holding every section: selected work, how he works, what he can do for you, contact and sources. Its background answers the pointer through one small script, <code>assets/grid.js</code>; the page works without it.</li>
+<li><a href="../"><code>/</code></a>: the home page, <code>src/index.html</code>. One self-contained page with its own styles, holding every section: who José is and where he works now, the tools he uses, his Web Summit work and agent team, how he works, what he can do for you, use with AI and contact, with the sources as small print in the footer. Its background answers the pointer through one small script, <code>assets/grid.js</code>; the page works without it.</li>
+<li>The home page is written in the first person ("I build"). <code>index.md</code>, <code>llms.txt</code> and this page are in the third person, because agents read them.</li>
+<li>Photos are in <code>src/media/photos/</code>: José's portrait and a photo with the RiskMandate team, both on the home page and on Photos and videos.</li>
 <li>This page and <a href="../photos-and-videos/">Photos and videos</a> use the stylesheet <code>style.css</code>.</li>
 <li><code>work/</code>, <code>how-he-works/</code> and <code>for-you/</code> hold no content: they forward to the matching section of the home page, so older links keep working.</li>
 <li>Every page starts with the same skip link, styled by <code>assets/chrome.css</code>.</li>
@@ -97,16 +100,17 @@ first; their rules apply.
 <ol>
 <li>Get the exact words and the source from José: a link, or "José, in his own words" with the date.</li>
 <li>Change <code>index.md</code> first. It is the master copy of the facts.</li>
-<li>Make the same change on the home page. Search <code>src/</code> for the old wording so that nothing is left behind.</li>
+<li>Make the same change on the home page, in the first person. Search <code>src/</code> for the old wording so that nothing is left behind.</li>
 <li>Update <code>llms.txt</code> if a page or a source changed.</li>
+<li>Add a dated line to <code>REALITY.md</code> saying what now exists and who asked for it.</li>
 </ol>
 
 <h4>Adding a photo or a video</h4>
 <ol>
-<li>Use only material José has supplied and agreed to publish. Ask him what it shows, who made it, who else is in it and whether they have agreed, and for the caption in his words.</li>
+<li>Use only material José has supplied and agreed to publish. Ask him what it shows, who made it, who else is in it and whether they have agreed, and for the caption in his words. Blur or crop out anything that names another person, such as a name badge.</li>
 <li>Remove the file's metadata, including any location, and size it for the web. Photos: JPEG, at most 1600 pixels on the long side. Videos: MP4 with a poster image; if a video is over about 20 MB, do not commit it: link to it.</li>
 <li>Save it under <code>src/media/</code>. The repository is public, so a file is public from the moment it is pushed, on any branch, before any release.</li>
-<li>Put it in the <code>media-grid</code> block on <code>photos-and-videos/</code>, in place of the matching placeholder, and inside the matching work entry on the home page, with this markup (on the home page the path starts <code>media/</code>):</li>
+<li>Put it in the <code>media-grid</code> block on <code>photos-and-videos/</code>, in place of the matching placeholder, with this markup. Put it on the home page only if José wants it there; the path there starts <code>media/</code>, and the two photos now on it carry a description for screen readers and no caption.</li>
 </ol>
 <pre tabindex="0"><code>&lt;figure class=&quot;media&quot;&gt;
   &lt;img src=&quot;../media/photos/NAME.jpg&quot; alt=&quot;What is in the picture&quot;
