@@ -26,7 +26,7 @@
   --shadow:0 1px 0 rgba(29,35,38,.05),0 10px 24px -16px rgba(29,35,38,.35);
 }
 *,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-padding-top:84px}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:100px}
 body{margin:0;color:var(--ink);font:400 18px/1.6 var(--sans);background-color:var(--canvas);background-image:radial-gradient(var(--dot) 1px,transparent 1.1px);background-size:26px 26px;overflow-wrap:break-word}
 a{color:var(--teal);text-underline-offset:3px;text-decoration-thickness:1.5px}
 a:hover{text-decoration-thickness:3px}
@@ -35,19 +35,20 @@ h1,h2,h3,h4{margin:0;line-height:1.15;font-weight:800;letter-spacing:-.01em}
 p{margin:0 0 .8em}
 ul,ol{margin:0;padding:0}
 code{font-family:var(--mono);font-size:.9em}
-[id]{scroll-margin-top:84px}
+[id]{scroll-margin-top:100px}
 .inner{max-width:1100px;margin:0 auto;padding:0 var(--gutter)}
 
 /* header: the brand row scrolls away, the stepper stays */
-.top{position:sticky;top:-60px;z-index:50;background:var(--canvas);border-bottom:2px solid var(--line)}
+.top{position:sticky;top:0;z-index:50;background:var(--canvas);border-bottom:2px solid var(--line)}
 .brand-row{height:60px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;font-size:1.1rem;color:var(--ink);text-decoration:none;min-height:44px}
 .brand svg{width:34px;height:34px;flex:none}
 .brand-role{color:var(--muted);font-size:.9rem;font-weight:600;text-align:right}
-.stepper ol{list-style:none;display:flex;align-items:center;overflow-x:auto;padding:8px 2px 10px;scrollbar-width:thin}
+.stepper{position:relative}
+.stepper ol{list-style:none;display:flex;align-items:center;overflow-x:auto;padding:12px 2px 13px;scrollbar-width:thin}
 .stepper li{display:flex;align-items:center;flex:none}
-.stepper li+li::before{content:"";width:18px;height:2px;background:var(--line);flex:none}
-.stepper a{display:flex;align-items:center;min-height:44px;padding:0 15px;border:2px solid var(--line);border-radius:999px;background:var(--node);color:var(--ink);font-weight:700;font-size:.92rem;text-decoration:none;white-space:nowrap}
+.stepper li+li::before{content:"";width:22px;height:2px;background:var(--line);flex:none}
+.stepper a{display:flex;align-items:center;min-height:54px;padding:0 24px;border:2px solid var(--line);border-radius:999px;background:var(--node);color:var(--ink);font-weight:800;font-size:1.06rem;text-decoration:none;white-space:nowrap}
 .stepper a:hover{border-color:var(--teal);color:var(--teal)}
 .stepper li:first-child a{border-color:var(--orange-fill)}
 .stepper li.out a{border-style:dashed}
@@ -273,6 +274,22 @@ footer p{margin:.25rem 0}
 }
 
 /* three key figures, each with its source */
+.headline{margin:6px 0 18px;font-size:clamp(1.15rem,2.2vw,1.4rem);line-height:1.4;max-width:40rem}
+.headline strong{font-weight:800;color:var(--teal-ink);background:linear-gradient(transparent 62%,var(--orange-soft) 62%)}
+.kinds.offer{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0 0 14px}
+.kinds.offer>li{margin:0;padding:18px 20px;border:2px solid var(--line);border-left:5px solid var(--teal);border-radius:18px}
+.kinds.offer>li::before,.kinds.offer>li::after{display:none}
+.kinds.offer h3{font-size:1.15rem;margin:0 0 .25rem;color:var(--ink)}
+@media (max-width:760px){.kinds.offer{grid-template-columns:1fr}}
+.band{background:var(--teal-ink);color:#fff;box-shadow:0 0 0 100vmax var(--teal-ink);clip-path:inset(0 -100vmax);padding:44px 0 22px;margin:0 0 56px}
+.band .stage-head p:last-child{color:#d6ebe8}
+.band .ref,.band .stage-head a{color:#fff}
+.band .port{background:var(--teal-ink);border-color:#fff}
+.band .pipe>li:not(.person){color:var(--ink)}
+.band .pipe-row::before{background:rgba(255,255,255,.45)}
+.band .pipe>li:not(:last-child)::before{background:#fff}
+.band .pipe>li:not(:last-child)::after{border-left-color:#fff}
+.stepper::after{content:"";position:absolute;right:0;top:0;bottom:0;width:36px;background:linear-gradient(to right,rgba(232,240,240,0),var(--canvas));pointer-events:none}
 .figures{list-style:none;margin:0 0 18px;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .figures li{background:var(--node);border:2px solid var(--line);border-top:5px solid var(--orange-fill);border-radius:18px;padding:14px 20px 16px;box-shadow:var(--shadow)}
 .figures strong{display:block;font-size:clamp(2.4rem,5vw,3.4rem);font-weight:800;line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
@@ -384,10 +401,6 @@ footer p{margin:.25rem 0}
 
 <header class="top">
 <div class="inner">
-<div class="brand-row">
-<a class="brand" href="#main"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#0f6b62"/><circle cx="12" cy="13" r="4" fill="#fff"/><circle cx="28" cy="13" r="4" fill="#f0a05a"/><circle cx="20" cy="28" r="4" fill="#fff"/><path d="M12 13L28 13L20 28Z" fill="none" stroke="#fff" stroke-width="1.6"/></svg>José Bota</a>
-<span class="brand-role">AI automation expert</span>
-</div>
 <nav class="stepper" aria-label="Sections">
 <ol>
 <li><a href="#start">Start</a></li>
@@ -417,11 +430,7 @@ footer p{margin:.25rem 0}
 <a class="branch main" href="#full-time"><strong>Hiring for an AI role?</strong><span>What José brings to a full-time team.</span><span class="go">Follow this branch</span></a>
 <a class="branch" href="#projects"><strong>Have an automation project?</strong><span>The kinds of work he can take on.</span><span class="go">Follow this branch</span></a>
 </div>
-<ul class="figures">
-<li><strong>14</strong><span>agents on his team<a class="ref" href="#src-6" aria-label="Source 6">[6]</a></span></li>
-<li><strong>13</strong><span>of them running<a class="ref" href="#src-6" aria-label="Source 6">[6]</a></span></li>
-<li><strong>277</strong><span>commits by his agents on the team's site<a class="ref" href="#src-2" aria-label="Source 2">[2]</a></span></li>
-</ul>
+<p class="headline"><strong>14 agents</strong> on his team made <strong>277 commits</strong> on the Web Summit team's site. <a class="ref" href="#src-6" aria-label="Source 6">[6]</a> <a class="ref" href="#src-2" aria-label="Source 2">[2]</a></p>
 </section>
 
 <section class="stage" id="work" aria-labelledby="h-work">
@@ -432,35 +441,27 @@ footer p{margin:.25rem 0}
 </div>
 
 <article class="node" id="agent-team">
-<div class="node-top"><span class="badge team">Agent team</span><span class="built">He runs this team for his own work</span></div>
 <h3>His agent team</h3>
 <div class="count">
 <strong>14 agents, 13 running</strong> <a class="ref" href="#src-6" aria-label="Source 6">[6]</a>
 <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="off"></i></span>
 </div>
-<p>His agents made 277 commits on the team's site. <a class="ref" href="#src-2" aria-label="Source 2">[2]</a> Each has one job. Three are the checks described under "How he works": the automation agent, the code reviewer and the security watcher. Among the others:</p>
-<ul class="roles">
-<li><strong>Developer</strong><span>For automations and integrations (n8n, WhatsApp, the site).</span></li>
-<li><strong>Helper</strong><span>Gets anyone stuck on setup unstuck.</span></li>
-<li class="wide" style="border-style:solid;border-left-width:5px;background:var(--node)"><strong>Sales coach</strong><span>Trains his RiskMandate pitch by role-play.</span></li>
-<li class="wide"><span>And six more:</span><span class="chips"><b>conductor</b><b>designer</b><b>CRM agent</b><b>vault agent</b><b>accountant</b><b>dashboard agent</b></span></li>
-</ul>
-<p class="see">See it on the Web Summit site: <a class="btn solid ext" href="https://web-summit.sgit.ai/people/jose/app/index.html#stand">Open his command centre</a> <span>or read <a href="https://web-summit.sgit.ai/team/jose/index.html">his team page</a> and <a href="https://web-summit.sgit.ai/people/jose/index.md">his people page</a>.</span></p>
+<p>José runs this team for his own work, and each agent has one job. On the Web Summit team's site they made 277 commits. <a class="ref" href="#src-2" aria-label="Source 2">[2]</a></p>
+<p>Three of them are the checks under <a href="#how-he-works">How he works</a>: the automation agent, the code reviewer and the security watcher. The others are a developer for automations and integrations (n8n, WhatsApp, the site), a helper that gets anyone stuck on setup unstuck, a sales coach that trains his RiskMandate pitch by role-play, and a conductor, a designer, a CRM agent, a vault agent, an accountant and a dashboard agent.</p>
+<p class="see"><a class="btn solid ext" href="https://web-summit.sgit.ai/people/jose/app/index.html#stand">Open his command centre</a> <span>or read <a href="https://web-summit.sgit.ai/team/jose/index.html">his team page</a> and <a href="https://web-summit.sgit.ai/people/jose/index.md">his people page</a>.</span></p>
 <div class="part" id="web-summit">
-<div class="node-top"><span class="badge auto">Automation</span><span class="built">Web Summit Lisbon 2026, 9 to 12 November</span></div>
 <h3>Web Summit: the channels</h3>
-<p>José took the technical side for the RiskMandate team: its automation, its messaging channels and its agents. His brief: "Make the team's machinery run". <a class="ref" href="#src-3" aria-label="Source 3">[3]</a> <a class="ref" href="#src-4" aria-label="Source 4">[4]</a> In the team's own summary: "José Bota, the channels". <a class="ref" href="#src-2" aria-label="Source 2">[2]</a></p>
+<p>At Web Summit Lisbon 2026 (9 to 12 November), José took the technical side for the RiskMandate team: its automation, its messaging channels and its agents. His brief: "Make the team's machinery run". <a class="ref" href="#src-3" aria-label="Source 3">[3]</a> <a class="ref" href="#src-4" aria-label="Source 4">[4]</a> In the team's own summary: "José Bota, the channels". <a class="ref" href="#src-2" aria-label="Source 2">[2]</a></p>
 <p>He had built a WhatsApp flow in n8n, and the team asked to use it to broadcast updates to the team's WhatsApp group.</p>
 <ol class="chain mini" aria-label="The flow, as the site describes it">
 <li>His WhatsApp flow<small>built in n8n</small></li>
 <li>The team's WhatsApp group<small>updates</small></li>
 </ol>
-<p class="todo-text" style="margin-top:1rem"><span class="label todo" style="font-style:normal">To follow</span> The flow is internal to the team; a write-up or screenshots are to follow, with José's approval.</p>
 </div>
 </article>
 </section>
 
-<section class="stage" id="how-he-works" aria-labelledby="h-how">
+<section class="stage band" id="how-he-works" aria-labelledby="h-how">
 <div class="stage-head">
 <span class="port" aria-hidden="true"></span>
 <h2 id="h-how">How he works: fast, and checked</h2>
@@ -508,31 +509,15 @@ footer p{margin:.25rem 0}
 <div class="stage-head">
 <span class="port" aria-hidden="true"></span>
 <h2 id="h-you">What he can do for you</h2>
-<p>The kinds of work José offers. They are not a list of past clients or contracts.</p>
+<p><span id="full-time">For a full-time AI technical role</span>, or <span id="projects">as freelance projects</span>. These are kinds of work José offers, not a list of past clients or contracts.</p>
 </div>
-<div class="fork">
-<div class="node branch-node" id="full-time">
-<h3>Hiring for an AI role?</h3>
-<p class="small">What he would bring to a full-time AI technical team:</p>
-<ul class="kinds one">
-<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L5 13h6l-1 8 8-10h-6z"/></g></svg><div><h4>Agent apps, built quickly</h4>From idea to something people can use: two in a day at the Vibathon Algarve 2026.</div></li>
-<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15l6-6"/><path d="M10 6l1-1a4 4 0 0 1 6 6l-1 1"/><path d="M14 18l-1 1a4 4 0 0 1-6-6l1-1"/></g></svg><div><h4>Automation and integration</h4>The RiskMandate team's channels and agents at Web Summit Lisbon 2026.</div></li>
-<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></g></svg><div><h4>Agent security in practice</h4>Prompt injection, tool allowlists, server-side authorisation and output filters.</div></li>
-<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g></svg><div><h4>A team of agents, kept in check</h4>Under review and watch, with tested automations and no unsupervised sending.</div></li>
-</ul>
-</div>
-<div class="node branch-node" id="projects">
-<h3>Have an automation project?</h3>
-<p class="small">Kinds of freelance work he takes on:</p>
-<ul class="kinds one">
-<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="7" height="6" rx="1.5"/><rect x="14" y="14" width="7" height="6" rx="1.5"/><path d="M10 7h4a3 3 0 0 1 3 3v4"/></g></svg><div><h4>n8n and WhatsApp automations</h4>Kept as tested code, with a person deciding what is sent.</div></li>
-<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 9h16"/><path d="M8 14h5"/></g></svg><div><h4>Agent apps</h4>Small and working, delivered quickly so you can try the idea early.</div></li>
-<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15l6-6"/><path d="M10 6l1-1a4 4 0 0 1 6 6l-1 1"/><path d="M14 18l-1 1a4 4 0 0 1-6-6l1-1"/></g></svg><div><h4>Integrations</h4>Connecting the systems you already use.</div></li>
-<li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></g></svg><div><h4>Agent security demos and workshops</h4>Sessions like <a href="#hack-the-agent">Hack the Agent</a>.</div></li>
+<ul class="kinds one offer">
+<li class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L5 13h6l-1 8 8-10h-6z"/></g></svg><div><h3>Agent apps</h3>Small and working, from idea to something people can use, delivered quickly so you can try the idea early: two in a day at the Vibathon Algarve 2026.</div></li>
+<li class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15l6-6"/><path d="M10 6l1-1a4 4 0 0 1 6 6l-1 1"/><path d="M14 18l-1 1a4 4 0 0 1-6-6l1-1"/></g></svg><div><h3>Automations and integrations</h3>n8n and WhatsApp flows kept as tested code, with a person deciding what is sent, and connections between the systems you already use. He ran the RiskMandate team's channels and agents at Web Summit Lisbon 2026.</div></li>
+<li class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></g></svg><div><h3>Agent security</h3>Prompt injection, tool allowlists, server-side authorisation and output filters in practice, and demos and workshops like <a href="#hack-the-agent">Hack the Agent</a>.</div></li>
+<li class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g></svg><div><h3>A team of agents, kept in check</h3>Under review and watch, with tested automations and no unsupervised sending.</div></li>
 </ul>
 <p class="small">No prices are listed. Terms are agreed with José directly.</p>
-</div>
-</div>
 </section>
 
 <section class="stage" id="use-with-ai" aria-labelledby="h-ai">
