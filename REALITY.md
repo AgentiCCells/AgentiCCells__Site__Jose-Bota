@@ -35,6 +35,8 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - The home page says José is based in the south of Portugal (supplied by José, 2026-11-17).
 
+- "Use with AI" on the home page is one action, "Get the prompt", leading to a short prompt on `agents/` that a hirer pastes into an AI assistant. The instructions for José's own agents and for site editors sit lower on that page, marked as being for maintainers.
+
 Does not exist:
 
 - No photo or video. None reached the session; the media sections hold marked placeholders.

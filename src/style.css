@@ -48,6 +48,8 @@ main { padding: 2rem 0 3rem; }
 h1 { font-size: 2.1rem; line-height: 1.15; margin: .2rem 0 .6rem; }
 h2 { font-size: 1.4rem; line-height: 1.25; margin: 2.4rem 0 .7rem; }
 h3, .card h2 { font-size: 1.12rem; line-height: 1.3; margin: 0 0 .4rem; }
+main > h3 { margin-top: 1.8rem; }
+h4 { font-size: 1rem; line-height: 1.3; margin: 1.4rem 0 .3rem; }
 .lead { font-size: 1.15rem; }
 .role { color: var(--warm); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; font-size: .9rem; margin: 0; }
 .muted, .source { color: var(--muted); font-size: .9rem; }
