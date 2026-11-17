@@ -12,6 +12,7 @@ Supplied by José, 2026-11-17:
 
 - voicedebrief.ai (https://voicedebrief.ai/): "Drop a voice note or an audio file. Get the debrief."
 - itwithus.com (https://itwithus.com/): AI automations.
+- promptugal.news (https://promptugal.news/): independent local news about technology and AI in Portugal, town by town (the site's own description, read 2026-11-17).
 
 He was at Web Summit Lisbon 2026 with the RiskMandate startup team (https://riskmandate.ai/).
 
