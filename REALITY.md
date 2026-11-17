@@ -33,6 +33,8 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - The home page says where José works now (voicedebrief.ai, itwithus.com and promptugal.news) and names RiskMandate as the startup team he was with at Web Summit, with a link. All three were supplied by José on 2026-11-17; José gave his roles: co-founder of VoiceDebrief and of ITwithUs, developer at PrompTugal.news. This agent later opened voicedebrief.ai, itwithus.com and promptugal.news; none names him on its front page. riskmandate.ai stayed refused by the session's network policy.
 
+- The home page says José is based in the south of Portugal (supplied by José, 2026-11-17).
+
 Does not exist:
 
 - No photo or video. None reached the session; the media sections hold marked placeholders.

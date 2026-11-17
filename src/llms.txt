@@ -1,6 +1,6 @@
 # José Bota
 
-> José Bota, AI automation expert: he builds agent apps, automations and integrations, fast, with security in mind. Site version __VERSION__.
+> José Bota, AI automation expert: he builds agent apps, automations and integrations, fast, with security in mind. Based in the south of Portugal. Site version __VERSION__.
 
 Rules for agents reading this site:
 

@@ -1,6 +1,6 @@
 # José Bota
 
-**AI automation expert.** José builds agent apps, automations and integrations, fast, with security in mind.
+**AI automation expert.** José builds agent apps, automations and integrations, fast, with security in mind. He is based in the south of Portugal (supplied by José, 2026-11-17).
 
 - Hiring for an AI role? See [What he can do for you](https://jose-bota.agenticcells.site/#full-time).
 - Have an automation project? See [What he can do for you](https://jose-bota.agenticcells.site/#projects).
