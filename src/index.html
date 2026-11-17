@@ -228,8 +228,12 @@ h1{font-size:clamp(2.8rem,8vw,5rem);letter-spacing:-.03em;line-height:1}
 .about svg{width:20px;height:20px;flex:none;color:var(--teal)}
 .tools{margin:16px 0 6px}
 .tools h2{font-size:.86rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--orange);margin:0 0 .5rem}
-.tools ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.tools li{background:var(--node);border:2px solid var(--line);border-radius:999px;padding:.3rem .95rem;font-weight:700;font-size:.95rem}
+.tools dl{margin:0;background:var(--node);border:2px solid var(--line);border-radius:16px;padding:6px 18px;box-shadow:var(--shadow)}
+.tools dl>div{display:grid;grid-template-columns:13.5rem 1fr;gap:.2rem 1rem;padding:.55rem 0;border-bottom:1px solid var(--line)}
+.tools dl>div:last-child{border-bottom:0}
+.tools dt{font-weight:800;color:var(--teal-ink)}
+.tools dd{margin:0}
+@media (max-width:640px){.tools dl>div{grid-template-columns:1fr}}
 .hero-actions{margin-top:1.1rem}
 .talk-ai{margin-top:1.1rem;padding-top:1.1rem;border-top:2px dashed var(--line)}
 .talk-ai .talk-line{font-size:1.05rem}
@@ -470,7 +474,13 @@ footer p{margin:.25rem 0}
 </div>
 <div class="tools" id="tools">
 <h2>Tools I use</h2>
-<ul><li>n8n</li><li>Cursor</li><li>Claude</li><li>ChatGPT</li><li>GitHub</li><li>VS Code</li><li>Lovable</li></ul>
+<dl>
+<div><dt>Agent tooling</dt><dd>Claude Code, Cursor, MCP servers, VS Code, GitHub, Lovable</dd></div>
+<div><dt>Models</dt><dd>OpenAI and Anthropic APIs, OpenRouter, Claude, ChatGPT</dd></div>
+<div><dt>Messaging and integration</dt><dd>n8n, Make, Zapier, the WhatsApp Business API, webhooks, REST APIs</dd></div>
+<div><dt>Data and hosting</dt><dd>Supabase, Postgres, Firebase, Vercel, Cloudflare, GitHub Pages</dd></div>
+<div><dt>Voice</dt><dd>Whisper</dd></div>
+</dl>
 </div>
 </section>
 
