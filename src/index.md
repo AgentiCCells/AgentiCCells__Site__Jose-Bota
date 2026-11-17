@@ -57,11 +57,12 @@ Both apps were offered as stand demos at Web Summit (https://web-summit.sgit.ai/
 - A security watcher: a read-only agent reports who committed what.
 - Agents draft, people send: his automation agent never sends.
 
-## What he can do for you (confirmed by José, 2026-11-16)
+## What he can do for you (confirmed by José, 2026-11-16 and 2026-11-17)
 
 - For a full-time AI technical role: agent apps, automation and integration work, and agent security in practice.
 - For freelance projects: n8n and WhatsApp automations, agent apps, integrations, agent security demos and workshops.
-- No prices are listed.
+- As an AI implementation consultant: automation and practical AI adoption, and custom AI integrations and development (supplied by José, 2026-11-17).
+- A team of agents, kept in check: under review and watch, with tested automations and no unsupervised sending.
 
 ## Photos
 
