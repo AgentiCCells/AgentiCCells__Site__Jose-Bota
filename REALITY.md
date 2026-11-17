@@ -19,6 +19,8 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - After an audit asked for by José: the home page says each thing once. "How he works" and the agent team are one section, contact comes before the section for agents and the sources, and the home page has no photos and videos section until there is media (the `photos-and-videos/` page stays). No fact was removed.
 
+- The home page ends on "Get in touch" (one line, two buttons). The sources are small print in the footer; every source mark still points to them.
+
 Does not exist:
 
 - No photo or video. None reached the session; the media sections hold marked placeholders.
