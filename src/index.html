@@ -30,6 +30,9 @@ html{-webkit-text-size-adjust:100%;scroll-padding-top:100px}
 body{margin:0;color:var(--ink);font:400 18px/1.6 var(--sans);background-color:var(--canvas);background-image:radial-gradient(var(--dot) 1px,transparent 1.1px);background-size:26px 26px;overflow-wrap:break-word}
 a{color:var(--teal);text-underline-offset:3px;text-decoration-thickness:1.5px}
 a:hover{text-decoration-thickness:3px}
+/* a small arrow marks a link that opens another site in a new tab */
+a[target="_blank"]:not(.btn)::after{content:"\2197";display:inline-block;margin-left:.15em;font-size:.8em;text-decoration:none}
+.now a[target="_blank"]::after{content:none}
 :focus-visible{outline:3px solid var(--plum);outline-offset:3px;border-radius:6px}
 h1,h2,h3,h4{margin:0;line-height:1.15;font-weight:800;letter-spacing:-.01em}
 p{margin:0 0 .8em}
@@ -481,7 +484,7 @@ footer p{margin:.25rem 0}
 <li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></svg>Two years in AI development</li>
 <li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c3 3 3 15 0 18c-3-3-3-15 0-18z"/></g></svg>English, Portuguese, Spanish and French</li>
 </ul>
-<p class="talk-actions hero-actions"><a class="btn solid" href="mailto:josebota@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>Email</a><a class="btn ext" href="https://www.linkedin.com/in/jbota/">LinkedIn</a></p>
+<p class="talk-actions hero-actions"><a class="btn solid" href="mailto:josebota@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>Email</a><a class="btn ext" href="https://www.linkedin.com/in/jbota/" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">LinkedIn</a></p>
 </div>
 <div class="fork solo">
 <span class="fork-lines" aria-hidden="true"></span>
@@ -490,9 +493,9 @@ footer p{margin:.25rem 0}
 <div class="now" id="now">
 <h2>Where I work now</h2>
 <ul>
-<li><a href="https://itwithus.com/"><strong>ITwithUs</strong></a><span class="role-tag">Co-founder</span><span class="what">AI that answers clients, plus custom AI integrations and development.</span></li>
-<li><a href="https://voicedebrief.ai/"><strong>VoiceDebrief</strong></a><span class="role-tag">Co-founder / Developer</span><span class="what">Drop a voice note or an audio file. Get the debrief.</span></li>
-<li><a href="https://promptugal.news/"><strong>PrompTugal.news</strong></a><span class="role-tag">Developer</span><span class="what">Local news about technology and AI in Portugal.</span></li>
+<li><a href="https://itwithus.com/" target="_blank" rel="noopener noreferrer" aria-describedby="newtab"><strong>ITwithUs</strong></a><span class="role-tag">Co-founder</span><span class="what">AI that answers clients, plus custom AI integrations and development.</span></li>
+<li><a href="https://voicedebrief.ai/" target="_blank" rel="noopener noreferrer" aria-describedby="newtab"><strong>VoiceDebrief</strong></a><span class="role-tag">Co-founder / Developer</span><span class="what">Drop a voice note or an audio file. Get the debrief.</span></li>
+<li><a href="https://promptugal.news/" target="_blank" rel="noopener noreferrer" aria-describedby="newtab"><strong>PrompTugal.news</strong></a><span class="role-tag">Developer</span><span class="what">Local news about technology and AI in Portugal.</span></li>
 </ul>
 </div>
 <div class="tools" id="tools">
@@ -512,7 +515,7 @@ footer p{margin:.25rem 0}
 <div class="stage-head">
 <span class="port" aria-hidden="true"></span>
 <h2 id="h-work">I was with RiskMandate at Web Summit 2026</h2>
-<p>In Lisbon, from 9 to 12 November, I looked after the <a href="https://riskmandate.ai/">RiskMandate</a> startup team's automation, messaging channels and agents.</p>
+<p>In Lisbon, from 9 to 12 November, I looked after the <a href="https://riskmandate.ai/" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">RiskMandate</a> startup team's automation, messaging channels and agents.</p>
 </div>
 <div class="count">
 <p><strong>14 agents</strong><span class="count-note">in my own team, 13 running <a class="ref" href="#src-6" aria-label="Source 6">[6]</a></span><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="off"></i></span></p>
@@ -528,7 +531,7 @@ footer p{margin:.25rem 0}
 <h3>My agent team</h3>
 <p>I run this team for my own work, and each agent has one job.</p>
 <p>Three of them are the checks under <a href="#how-he-works">How I work</a>: the automation agent, the code reviewer and the security watcher. The others are a developer for automations and integrations (n8n, WhatsApp, the site), a helper that gets anyone stuck on setup unstuck, a sales coach that trains my RiskMandate pitch by role-play, and a conductor, a designer, a CRM agent, a vault agent, an accountant and a dashboard agent.</p>
-<p class="see"><a class="btn solid ext" href="https://web-summit.sgit.ai/people/jose/app/index.html#stand">Open my command centre</a> <span>or read <a href="https://web-summit.sgit.ai/team/jose/index.html">my team page</a> and <a href="https://web-summit.sgit.ai/people/jose/index.md">my people page</a>.</span></p>
+<p class="see"><a class="btn solid ext" href="https://web-summit.sgit.ai/people/jose/app/index.html#stand" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">Open my command centre</a> <span>or read <a href="https://web-summit.sgit.ai/team/jose/index.html" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">my team page</a> and <a href="https://web-summit.sgit.ai/people/jose/index.md" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">my people page</a>.</span></p>
 <div class="part" id="web-summit">
 <h3>Web Summit: the channels</h3>
 <p>My brief: "Make the team's machinery run". <a class="ref" href="#src-3" aria-label="Source 3">[3]</a> <a class="ref" href="#src-4" aria-label="Source 4">[4]</a> In the team's own summary: "José Bota, the channels". <a class="ref" href="#src-2" aria-label="Source 2">[2]</a></p>
@@ -549,7 +552,7 @@ footer p{margin:.25rem 0}
 </div>
 <div class="pipe-row">
 <ol class="chain pipe">
-<li><span class="n" aria-hidden="true">1</span><h3>I build fast</h3><p>Two working agent apps in a day: <a class="ref" href="#src-1" aria-label="Source 1">[1]</a> <a href="https://agent-defense-arena.lovable.app/">Hack the Agent</a> and <a href="https://reach-check-agent.lovable.app/">ReachCheck</a>.</p></li>
+<li><span class="n" aria-hidden="true">1</span><h3>I build fast</h3><p>Two working agent apps in a day: <a class="ref" href="#src-1" aria-label="Source 1">[1]</a> <a href="https://agent-defense-arena.lovable.app/" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">Hack the Agent</a> and <a href="https://reach-check-agent.lovable.app/" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">ReachCheck</a>.</p></li>
 <li><span class="n" aria-hidden="true">2</span><h3>Automations are tested code</h3><p>My n8n flows are kept as tested code, so a flow can be read, reviewed and checked like any other program.</p></li>
 <li><span class="n" aria-hidden="true">3</span><h3>A reviewer on every change</h3><p>A code-review agent reviews every diff before it is pushed.</p></li>
 </ol>
@@ -572,7 +575,7 @@ footer p{margin:.25rem 0}
 <ul class="kinds one offer">
 <li class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L5 13h6l-1 8 8-10h-6z"/></g></svg><div><h3>Agent apps</h3>Small and working, from idea to something people can use, delivered quickly so you can try the idea early: two in a day at the Vibathon Algarve 2026.</div></li>
 <li class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15l6-6"/><path d="M10 6l1-1a4 4 0 0 1 6 6l-1 1"/><path d="M14 18l-1 1a4 4 0 0 1-6-6l1-1"/></g></svg><div><h3>Automations and integrations</h3>n8n and WhatsApp flows kept as tested code, with a person deciding what is sent, and connections between the systems you already use. I ran the RiskMandate team's channels and agents at Web Summit Lisbon 2026.</div></li>
-<li class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></g></svg><div><h3>Agent security</h3>Prompt injection, tool allowlists, server-side authorisation and output filters in practice, and demos and workshops like <a href="https://agent-defense-arena.lovable.app/">Hack the Agent</a>.</div></li>
+<li class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></g></svg><div><h3>Agent security</h3>Prompt injection, tool allowlists, server-side authorisation and output filters in practice, and demos and workshops like <a href="https://agent-defense-arena.lovable.app/" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">Hack the Agent</a>.</div></li>
 <li class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g></svg><div><h3>A team of agents, kept in check</h3>Under review and watch, with tested automations and no unsupervised sending.</div></li>
 </ul>
 <p class="small">No prices are listed. We agree terms directly.</p>
@@ -596,7 +599,7 @@ footer p{margin:.25rem 0}
 </div>
 <div class="node end talk">
 <p class="talk-line">Hiring for an AI role, or have an automation project? Let's talk.</p>
-<p class="talk-actions"><a class="btn solid" href="mailto:josebota@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>Send an email</a><a class="btn ext" href="https://www.linkedin.com/in/jbota/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10.5V17M8 7.2v.1M12 17v-3.6c0-1.6 1-2.6 2.3-2.6S16.5 11.8 16.5 13.4V17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>LinkedIn</a></p>
+<p class="talk-actions"><a class="btn solid" href="mailto:josebota@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>Send an email</a><a class="btn ext" href="https://www.linkedin.com/in/jbota/" target="_blank" rel="noopener noreferrer" aria-describedby="newtab"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10.5V17M8 7.2v.1M12 17v-3.6c0-1.6 1-2.6 2.3-2.6S16.5 11.8 16.5 13.4V17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>LinkedIn</a></p>
 </div>
 </section>
 
@@ -608,17 +611,18 @@ footer p{margin:.25rem 0}
 <h2 id="h-sources">Sources</h2>
 <p>Public pages, each read 2026-11-16.</p>
 <ol class="sources">
-<li id="src-1"><a href="https://newsroom.sgit.ai/articles/jose-botas-two-agent-apps.md">Newsroom review of José Bota's two agent apps</a><span>Hack the Agent, ReachCheck, and how I work.</span></li>
-<li id="src-2"><a href="https://newsroom.sgit.ai/articles/ten-days-at-web-summit.md">Ten days at Web Summit</a><span>The 277 commits; "José Bota, the channels"; the Web Summit work.</span></li>
-<li id="src-3"><a href="https://web-summit.sgit.ai/team/jose/index.md">Team page on the Web Summit site</a><span>The Web Summit work.</span></li>
-<li id="src-4"><a href="https://web-summit.sgit.ai/brief-jose/index.md">My brief on the Web Summit site</a><span>The Web Summit work; the two apps offered as stand demos.</span></li>
-<li id="src-5"><a href="https://web-summit.sgit.ai/meet/jose/index.md">Meet page on the Web Summit site</a><span>The two apps offered as stand demos.</span></li>
-<li id="src-6"><a href="https://web-summit.sgit.ai/people/jose/index.md">My people page on the Web Summit site</a><span>The count of 14 agents, 13 running; how I work.</span></li>
+<li id="src-1"><a href="https://newsroom.sgit.ai/articles/jose-botas-two-agent-apps.md" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">Newsroom review of José Bota's two agent apps</a><span>Hack the Agent, ReachCheck, and how I work.</span></li>
+<li id="src-2"><a href="https://newsroom.sgit.ai/articles/ten-days-at-web-summit.md" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">Ten days at Web Summit</a><span>The 277 commits; "José Bota, the channels"; the Web Summit work.</span></li>
+<li id="src-3"><a href="https://web-summit.sgit.ai/team/jose/index.md" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">Team page on the Web Summit site</a><span>The Web Summit work.</span></li>
+<li id="src-4"><a href="https://web-summit.sgit.ai/brief-jose/index.md" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">My brief on the Web Summit site</a><span>The Web Summit work; the two apps offered as stand demos.</span></li>
+<li id="src-5"><a href="https://web-summit.sgit.ai/meet/jose/index.md" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">Meet page on the Web Summit site</a><span>The two apps offered as stand demos.</span></li>
+<li id="src-6"><a href="https://web-summit.sgit.ai/people/jose/index.md" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">My people page on the Web Summit site</a><span>The count of 14 agents, 13 running; how I work.</span></li>
 </ol>
 </section>
 <p>Made with the AgentiCCells site factory; a first version, materials to follow.</p>
 <p>Version __VERSION__ · Code Apache-2.0, text CC BY 4.0 · <a href="index.md">This site as Markdown</a> · <a href="llms.txt">llms.txt</a> · <a href="photos-and-videos/">Photos and videos</a></p>
 </div>
 </footer>
+<p id="newtab" hidden>Opens in a new tab</p>
 </body>
 </html>

@@ -33,6 +33,7 @@ body {
 }
 a { color: var(--accent); text-underline-offset: 2px; }
 a:hover { text-decoration-thickness: 2px; }
+a[target="_blank"]::after { content: "\2197"; display: inline-block; margin-left: .15em; font-size: .8em; text-decoration: none; }
 .wrap { max-width: 50rem; margin: 0 auto; padding: 0 1.1rem; }
 
 /* Header and navigation */
