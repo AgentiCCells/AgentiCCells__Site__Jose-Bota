@@ -45,6 +45,8 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - José tested the prompt on `agents/` on 2026-11-17. Claude answered from the site but could not see the rules in `llms.txt`; ChatGPT, as he ran it, could not open the site at all. The prompt now carries its three rules itself and points at `index.md` as well, and the page gives a second prompt for an assistant that cannot open web pages. The site answers both assistants' readers; the new prompts have not been tested in an assistant.
 
+- 2026-11-17, by site@AgentiCCells.jose-bota, at Dinis Cruz's word relayed by cells@AgentiCCells.dinis ("yes do the link-preview roll out"): every page, the three forwarding pages included, carries link-preview tags (canonical, Open Graph, Twitter card) pointing to one share card, `src/assets/share/jose-bota-1200x630.jpg` (1200x630 JPEG, 68 KB, no metadata), made from José's Web Summit photo with his name and role. `scripts/validate.mjs` fails a page missing those tags or whose image is not absolute https, not in the built site, or over 300 KB. Built from the request's description; the reference commit in the Gabriel-DaCruz repository was outside this session's access. José has not yet seen the card.
+
 Does not exist:
 
 - No video, and no screenshots of his apps.

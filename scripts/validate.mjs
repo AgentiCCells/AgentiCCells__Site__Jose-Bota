@@ -23,6 +23,16 @@ for (const f of [...files, 'hub.json', 'README.md']) {
     if (!/<title>[^<]+<\/title>/.test(s)) fail(`${f}: no <title>`);
     if (!/<meta name="description" content="[^"]+"/.test(s)) fail(`${f}: no description`);
     if (!/<html lang="/.test(s)) fail(`${f}: no lang on <html>`);
+    // Link previews (Open Graph), 2026-11-17, at Dinis Cruz's word via cells@AgentiCCells.dinis.
+    const meta = k => (s.match(new RegExp(`<meta (?:property|name)="${k}" content="([^"]*)"`)) || [])[1];
+    for (const k of ['og:title', 'og:description', 'og:url', 'og:image', 'og:image:width', 'og:image:height', 'twitter:card']) if (!meta(k)) fail(`${f}: no ${k}`);
+    const ogImage = meta('og:image');
+    if (ogImage) {
+      const base = 'https://jose-bota.agenticcells.site/';
+      if (!ogImage.startsWith('https://')) fail(`${f}: og:image is not absolute https (${ogImage})`);
+      else if (!ogImage.startsWith(base) || !existsSync(join('_site', ogImage.slice(base.length)))) fail(`${f}: og:image is not in the built site (${ogImage})`);
+      else if (statSync(join('_site', ogImage.slice(base.length))).size > 300 * 1024) fail(`${f}: og:image is over 300 KB (WhatsApp drops it)`);
+    }
     for (const m of s.matchAll(/<script[^>]+src="([^"]+)"/g)) if (/^(https?:)?\/\//.test(m[1])) fail(`${f}: third-party script ${m[1]}`);
     for (const m of s.matchAll(/<link[^>]+rel="stylesheet"[^>]+href="([^"]+)"/g)) if (/^(https?:)?\/\//.test(m[1])) fail(`${f}: third-party stylesheet ${m[1]}`);
     for (const m of s.matchAll(/(?:href|src)="([^"#?]+)/g)) {
