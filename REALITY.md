@@ -27,6 +27,8 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - The two one-day apps have no section on the home page: they are two links under "He builds fast". Their description is in `index.md` only. The 14 agents and 277 commits are stated once, inside the agent team box.
 
+- After an independent review by a fresh agent: one call to action under the name in place of two that led to the same list, and the pipeline's arrows and connectors corrected on phones.
+
 Does not exist:
 
 - No photo or video. None reached the session; the media sections hold marked placeholders.
