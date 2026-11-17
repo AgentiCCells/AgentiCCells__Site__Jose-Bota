@@ -1,6 +1,6 @@
 # José Bota
 
-**AI automation expert.** José builds agent apps, automations and integrations, fast, with security in mind. He is based in the south of Portugal, has been in AI development for two years, and works in English, Portuguese, Spanish and French. Tools he uses, by kind: agent tooling (Claude Code, Cursor, MCP servers, VS Code, GitHub, Lovable); models (OpenAI and Anthropic APIs, OpenRouter, Claude, ChatGPT); messaging and integration (n8n, Make, Zapier, the WhatsApp Business API, webhooks, REST APIs); data and hosting (Supabase, Postgres, Firebase, Vercel, Cloudflare, GitHub Pages). (All supplied by José, 2026-11-17, except Lovable, which the newsroom review names.)
+**AI automation expert.** José builds agent apps, automations and integrations, fast, with security in mind. He is based in the south of Portugal, has been in AI development for two years, and works in English, Portuguese, Spanish and French. Tools he uses, by kind: agent tooling (Claude Code, Cursor, MCP servers, VS Code, GitHub, Lovable); models (OpenAI and Anthropic APIs, OpenRouter, Claude, ChatGPT); messaging and integration (n8n, Make, Zapier, the WhatsApp Business API, webhooks, REST APIs); data and hosting (Supabase, Firebase, Vercel, Cloudflare, GitHub Pages). (All supplied by José, 2026-11-17, except Lovable, which the newsroom review names.)
 
 - Hiring for an AI role? See [What he can do for you](https://jose-bota.agenticcells.site/#full-time).
 - Have an automation project? See [What he can do for you](https://jose-bota.agenticcells.site/#projects).
@@ -10,8 +10,8 @@
 
 Supplied by José, 2026-11-17:
 
-- Co-founder of ITwithUs (https://itwithus.com/): AI automations.
-- Co-founder of VoiceDebrief (https://voicedebrief.ai/): "Drop a voice note or an audio file. Get the debrief."
+- Co-founder of ITwithUs (https://itwithus.com/): AI that answers clients and handles bookings for local businesses (from the site's own description, read 2026-11-17).
+- Co-founder and developer of VoiceDebrief (https://voicedebrief.ai/): "Drop a voice note or an audio file. Get the debrief."
 - Developer at PrompTugal.news (https://promptugal.news/): independent local news about technology and AI in Portugal, town by town (the site's own description, read 2026-11-17).
 
 He was at Web Summit Lisbon 2026 with the RiskMandate startup team (https://riskmandate.ai/).
