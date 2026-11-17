@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Use with AI · José Bota</title>
 <meta name="description" content="How to use this site with an AI agent: llms.txt, the home page as Markdown, and instructions for agents acting for someone hiring José Bota or with a project, for José, and for a site editor.">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ask your AI assistant about José Bota">
+<meta property="og:description" content="A prompt to paste into Claude, ChatGPT or another assistant, so it reads this site for you.">
+<meta property="og:url" content="https://jose-bota.agenticcells.site/agents/">
+<meta property="og:image" content="https://jose-bota.agenticcells.site/media/photos/jose-at-web-summit.jpg">
+<meta property="og:image:alt" content="José Bota beside a large Web Summit sign">
 <link rel="stylesheet" href="../assets/chrome.css">
 <link rel="stylesheet" href="../style.css">
 </head>
@@ -14,11 +21,12 @@
 <div class="wrap">
 <a class="brand" href="../"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#0f6b62"/><circle cx="12" cy="13" r="4" fill="#fff"/><circle cx="28" cy="13" r="4" fill="#f0a05a"/><circle cx="20" cy="28" r="4" fill="#fff"/><path d="M12 13L28 13L20 28Z" fill="none" stroke="#fff" stroke-width="1.6"/></svg>José Bota</a>
 <nav aria-label="Main"><ul>
-<li><a href="../#work">Work</a></li>
+<li><a href="../#work">Web Summit</a></li>
 <li><a href="../#how-he-works">How he works</a></li>
-<li><a href="../#for-you">What he can do for you</a></li>
-<li><a href="../photos-and-videos/">Photos and videos</a></li>
+<li><a href="../#for-you">For you</a></li>
+<li><a href="../photos-and-videos/">Photos</a></li>
 <li><a href="./" aria-current="page">Use with AI</a></li>
+<li><a href="../#contact">Contact</a></li>
 </ul></nav>
 </div>
 </header>
@@ -104,10 +112,10 @@ first; their rules apply.
 <ul class="ticks">
 <li><a href="../"><code>/</code></a>: the home page, <code>src/index.html</code>. One self-contained page with its own styles, holding every section: who José is and where he works now, the tools he uses, his Web Summit work and agent team, how he works, what he can do for you, use with AI and contact, with the sources as small print in the footer. Its background answers the pointer through one small script, <code>assets/grid.js</code>; the page works without it.</li>
 <li>The home page is written in the first person ("I build"). <code>index.md</code>, <code>llms.txt</code> and this page are in the third person, because agents read them.</li>
-<li>Photos are in <code>src/media/photos/</code>: José's portrait and a photo of him at Web Summit, both on the home page and on Photos and videos.</li>
-<li>This page and <a href="../photos-and-videos/">Photos and videos</a> use the stylesheet <code>style.css</code>.</li>
+<li>Photos are in <code>src/media/photos/</code>: José's portrait and a photo of him at Web Summit, both on the home page and on the Photos page.</li>
+<li>This page and <a href="../photos-and-videos/">Photos</a> use the stylesheet <code>style.css</code>.</li>
 <li><code>work/</code>, <code>how-he-works/</code> and <code>for-you/</code> hold no content: they forward to the matching section of the home page, so older links keep working.</li>
-<li>Every page starts with the same skip link, styled by <code>assets/chrome.css</code>.</li>
+<li>Every content page starts with the same skip link, styled by <code>assets/chrome.css</code>, and carries the site icon, <code>assets/icon.svg</code>.</li>
 </ul>
 
 <h4>Changing a fact</h4>
@@ -124,7 +132,7 @@ first; their rules apply.
 <li>Use only material José has supplied and agreed to publish. Ask him what it shows, who made it, who else is in it and whether they have agreed, and for the caption in his words. Blur or crop out anything that names another person, such as a name badge.</li>
 <li>Remove the file's metadata, including any location, and size it for the web. Photos: JPEG, at most 1600 pixels on the long side. Videos: MP4 with a poster image; if a video is over about 20 MB, do not commit it: link to it.</li>
 <li>Save it under <code>src/media/</code>. The repository is public, so a file is public from the moment it is pushed, on any branch, before any release.</li>
-<li>Put it in the <code>media-grid</code> block on <code>photos-and-videos/</code>, in place of the matching placeholder, with this markup. Put it on the home page only if José wants it there; the path there starts <code>media/</code>, and the two photos now on it carry a description for screen readers and no caption.</li>
+<li>Put it in the <code>media-grid</code> block on <code>photos-and-videos/</code>, with this markup. Put it on the home page only if José wants it there; the path there starts <code>media/</code>, and the two photos now on it carry a description for screen readers and no caption.</li>
 </ol>
 <pre tabindex="0"><code>&lt;figure class=&quot;media&quot;&gt;
   &lt;img src=&quot;../media/photos/NAME.jpg&quot; alt=&quot;What is in the picture&quot;
@@ -146,7 +154,7 @@ first; their rules apply.
 
 <footer>
 <div class="wrap">
-<p>Made with the AgentiCCells site factory; a first version, materials to follow.</p>
+<p>Made with the AgentiCCells site factory.</p>
 <p>Version __VERSION__ · Code Apache-2.0, text CC BY 4.0 · <a href="../llms.txt">llms.txt</a></p>
 </div>
 </footer>

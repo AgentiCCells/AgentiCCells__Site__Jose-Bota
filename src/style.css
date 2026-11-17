@@ -33,7 +33,7 @@ body {
 }
 a { color: var(--accent); text-underline-offset: 2px; }
 a:hover { text-decoration-thickness: 2px; }
-a[target="_blank"]::after { content: "\2197"; display: inline-block; margin-left: .15em; font-size: .8em; text-decoration: none; }
+a[target="_blank"]::after { content: "\2197"; display: inline-block; margin-left: .15em; font-size: max(.8em, 12px); text-decoration: none; }
 .wrap { max-width: 50rem; margin: 0 auto; padding: 0 1.1rem; }
 
 /* Header and navigation */
@@ -43,9 +43,11 @@ a[target="_blank"]::after { content: "\2197"; display: inline-block; margin-left
 .mark { width: 2rem; height: 2rem; flex: none; }
 nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .2rem 1rem; font-size: .95rem; }
 nav a { text-decoration: none; color: var(--muted); }
+@media (max-width: 640px) { nav ul { gap: 0 1.1rem; } nav a { display: inline-flex; align-items: center; min-height: 44px; } }
 nav a:hover, nav a[aria-current="page"] { color: var(--accent); text-decoration: underline; }
 
 main { padding: 2rem 0 3rem; }
+main.wrap { padding: 2rem 1.1rem 3rem; }
 h1 { font-size: 2.1rem; line-height: 1.15; margin: .2rem 0 .6rem; }
 h2 { font-size: 1.4rem; line-height: 1.25; margin: 2.4rem 0 .7rem; }
 h3, .card h2 { font-size: 1.12rem; line-height: 1.3; margin: 0 0 .4rem; }
@@ -91,6 +93,8 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
    .media-grid holds figure.media items (an img or a video with controls, then a figcaption);
    .media--todo marks a placeholder for material that has not arrived. */
 .media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 1rem; margin: 1rem 0 1.6rem; }
+.media-grid--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 640px) { .media-grid--two { grid-template-columns: 1fr; } }
 .media { margin: 0; min-width: 0; }
 figure.media { background: var(--card); border: 1px solid var(--line); border-radius: .6rem; overflow: hidden; }
 .media img, .media video { display: block; width: 100%; height: auto; }

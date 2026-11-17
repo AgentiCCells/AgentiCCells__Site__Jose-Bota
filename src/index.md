@@ -20,7 +20,7 @@ He was at Web Summit Lisbon 2026 with the RiskMandate startup team (https://risk
 
 ### Web Summit Lisbon 2026: automation and messaging channels
 
-At Web Summit Lisbon 2026 (9 to 12 November), for the RiskMandate team, José took the technical side: automation, messaging channels and the agents ("Make the team's machinery run"). He had built a WhatsApp flow in n8n, and the team asked to use it to broadcast updates to the team's WhatsApp group. In the team's own summary: "José Bota, the channels".
+At Web Summit Lisbon 2026 (9 to 12 November), for the RiskMandate team, José ran the technical side (his own word, 2026-11-17): automation, messaging channels and the agents ("Make the team's machinery run"). He had built a WhatsApp flow in n8n, and the team asked to use it to broadcast updates to the team's WhatsApp group. In the team's own summary: "José Bota, the channels".
 
 - Sources: https://web-summit.sgit.ai/team/jose/index.md, https://web-summit.sgit.ai/brief-jose/index.md, https://newsroom.sgit.ai/articles/ten-days-at-web-summit.md (each read 2026-11-16)
 
@@ -63,10 +63,10 @@ Both apps were offered as stand demos at Web Summit (https://web-summit.sgit.ai/
 - For freelance projects: n8n and WhatsApp automations, agent apps, integrations, agent security demos and workshops.
 - No prices are listed.
 
-## Photos and videos
+## Photos
 
-Two photos, both supplied by José on 2026-11-17: a portrait (https://jose-bota.agenticcells.site/media/photos/jose-bota.jpg) and José at Web Summit Lisbon 2026, beside the Web Summit sign (https://jose-bota.agenticcells.site/media/photos/jose-at-web-summit.jpg). More materials are coming.
+Two photos, both supplied by José on 2026-11-17: a portrait (https://jose-bota.agenticcells.site/media/photos/jose-bota.jpg) and José at Web Summit Lisbon 2026, beside the Web Summit sign (https://jose-bota.agenticcells.site/media/photos/jose-at-web-summit.jpg).
 
 ---
 
-Made with the AgentiCCells site factory; a first version, materials to follow. Version __VERSION__. Text CC BY 4.0.
+Made with the AgentiCCells site factory. Version __VERSION__. Text CC BY 4.0.

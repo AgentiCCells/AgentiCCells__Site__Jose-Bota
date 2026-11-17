@@ -8,6 +8,13 @@
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#f4f1ea">
 <link rel="canonical" href="https://jose-bota.agenticcells.site/">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="José Bota, AI automation expert">
+<meta property="og:description" content="I build agent apps, automations and integrations, fast, with security in mind.">
+<meta property="og:url" content="https://jose-bota.agenticcells.site/">
+<meta property="og:image" content="https://jose-bota.agenticcells.site/media/photos/jose-at-web-summit.jpg">
+<meta property="og:image:alt" content="José Bota beside a large Web Summit sign">
 <link rel="alternate" type="text/markdown" href="index.md" title="This site as Markdown">
 <link rel="stylesheet" href="assets/chrome.css">
 <script src="assets/grid.js" defer></script>
@@ -31,7 +38,7 @@ body{margin:0;color:var(--ink);font:400 18px/1.6 var(--sans);background-color:va
 a{color:var(--teal);text-underline-offset:3px;text-decoration-thickness:1.5px}
 a:hover{text-decoration-thickness:3px}
 /* a small arrow marks a link that opens another site in a new tab */
-a[target="_blank"]:not(.btn)::after{content:"\2197";display:inline-block;margin-left:.15em;font-size:.8em;text-decoration:none}
+a[target="_blank"]:not(.btn)::after{content:"\2197";display:inline-block;margin-left:.15em;font-size:max(.8em,12px);text-decoration:none}
 .now a[target="_blank"]::after{content:none}
 :focus-visible{outline:3px solid var(--plum);outline-offset:3px;border-radius:6px}
 h1,h2,h3,h4{margin:0;line-height:1.15;font-weight:800;letter-spacing:-.01em}
@@ -139,7 +146,9 @@ h1{font-size:clamp(2.8rem,8vw,5rem);letter-spacing:-.03em;line-height:1}
 .now h2{font-size:.86rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--orange);margin:0 0 .4rem}
 .now ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 .now li{background:var(--node);border:2px solid var(--line);border-left:4px solid var(--orange-fill);border-radius:12px;padding:8px 12px 9px;display:flex;flex-wrap:wrap;align-items:baseline;align-content:flex-start;gap:.1rem .5rem}
+.now li{position:relative}
 .now a{font-size:1rem;text-decoration-thickness:1.5px}
+.now a::before{content:"";position:absolute;inset:0;border-radius:10px}
 .now .role-tag{font-size:.75rem;font-weight:800;letter-spacing:.01em;text-transform:uppercase;color:var(--orange-ink);background:var(--orange-soft);border-radius:999px;padding:.05rem .4rem;white-space:nowrap}
 .now .what{flex-basis:100%;color:var(--muted);font-size:.84rem;line-height:1.35}
 @media (max-width:860px){.now ul{grid-template-columns:1fr;gap:8px}}
@@ -514,7 +523,7 @@ footer p{margin:.25rem 0}
 <div class="stage-head">
 <span class="port" aria-hidden="true"></span>
 <h2 id="h-work">I was with RiskMandate at Web Summit 2026</h2>
-<p>In Lisbon, from 9 to 12 November, I looked after the <a href="https://riskmandate.ai/" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">RiskMandate</a> startup team's automation, messaging channels and agents.</p>
+<p>In Lisbon, from 9 to 12 November, I ran the <a href="https://riskmandate.ai/" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">RiskMandate</a> startup team's automation, messaging channels and agents.</p>
 </div>
 <div class="count">
 <p><strong>14 agents</strong><span class="count-note">in my own team, 13 running <a class="ref" href="#src-6" aria-label="Source 6">[6]</a></span><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="off"></i></span></p>
@@ -529,7 +538,7 @@ footer p{margin:.25rem 0}
 <article class="node" id="agent-team">
 <h3>My agent team</h3>
 <p>I run this team for my own work, and each agent has one job.</p>
-<p>Three of them are the checks under <a href="#how-he-works">How I work</a>: the automation agent, the code reviewer and the security watcher. The others are a developer for automations and integrations (n8n, WhatsApp, the site), a helper that gets anyone stuck on setup unstuck, a sales coach that trains my RiskMandate pitch by role-play, and a conductor, a designer, a CRM agent, a vault agent, an accountant and a dashboard agent.</p>
+<p>Three of them are the checks under <a href="#how-he-works">How I work</a>: the automation agent, the code reviewer and the security watcher. The others include a developer for automations and integrations (n8n, WhatsApp, the site), a helper that gets anyone stuck on setup unstuck, a sales coach that trains my RiskMandate pitch by role-play, and a conductor, a designer, a CRM agent, a vault agent, an accountant and a dashboard agent.</p>
 <p class="see"><a class="btn solid ext" href="https://web-summit.sgit.ai/people/jose/app/index.html#stand" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">Open my command centre</a> <span>or read <a href="https://web-summit.sgit.ai/team/jose/index.html" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">my team page</a> and <a href="https://web-summit.sgit.ai/people/jose/index.md" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">my people page</a>.</span></p>
 <div class="part" id="web-summit">
 <h3>Web Summit: the channels</h3>
@@ -613,12 +622,12 @@ footer p{margin:.25rem 0}
 <li id="src-1"><a href="https://newsroom.sgit.ai/articles/jose-botas-two-agent-apps.md" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">Newsroom review of José Bota's two agent apps</a><span>Hack the Agent, ReachCheck, and how I work.</span></li>
 <li id="src-2"><a href="https://newsroom.sgit.ai/articles/ten-days-at-web-summit.md" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">Ten days at Web Summit</a><span>The 277 commits; "José Bota, the channels"; the Web Summit work.</span></li>
 <li id="src-3"><a href="https://web-summit.sgit.ai/team/jose/index.md" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">Team page on the Web Summit site</a><span>The Web Summit work.</span></li>
-<li id="src-4"><a href="https://web-summit.sgit.ai/brief-jose/index.md" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">My brief on the Web Summit site</a><span>The Web Summit work; the two apps offered as stand demos.</span></li>
+<li id="src-4"><a href="https://web-summit.sgit.ai/brief-jose/index.md" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">My brief on the Web Summit site</a><span>The Web Summit work.</span></li>
 <li id="src-5"><a href="https://web-summit.sgit.ai/meet/jose/index.md" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">Meet page on the Web Summit site</a><span>The two apps offered as stand demos.</span></li>
 <li id="src-6"><a href="https://web-summit.sgit.ai/people/jose/index.md" target="_blank" rel="noopener noreferrer" aria-describedby="newtab">My people page on the Web Summit site</a><span>The count of 14 agents, 13 running; how I work.</span></li>
 </ol>
 </section>
-<p>Made with the AgentiCCells site factory; a first version, materials to follow.</p>
+<p>Made with the AgentiCCells site factory.</p>
 <p>Version __VERSION__ · Code Apache-2.0, text CC BY 4.0 · <a href="index.md">This site as Markdown</a> · <a href="llms.txt">llms.txt</a> · <a href="photos-and-videos/">Photos and videos</a></p>
 </div>
 </footer>
