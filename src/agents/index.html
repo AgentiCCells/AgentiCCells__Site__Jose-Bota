@@ -29,12 +29,27 @@
 <p class="lead">This site is written to be read by people and by AI assistants. If you are hiring, or have a project, let your assistant read it for you.</p>
 
 <h2 id="hiring-or-project">If you are hiring, or have a project</h2>
-<p>Select and copy this, then paste it into ChatGPT, Claude or any assistant that can read web pages. Put your role or project in the brackets.</p>
-<pre tabindex="0"><code>Read https://jose-bota.agenticcells.site/llms.txt and follow its rules.
+<p>Select and copy this, then paste it into Claude, ChatGPT or any assistant that can read web pages. Put your role or project in the brackets.</p>
+<pre tabindex="0"><code>Read https://jose-bota.agenticcells.site/llms.txt and
+https://jose-bota.agenticcells.site/index.md
 I am considering José Bota for: [describe the role or project].
 Tell me where the site's evidence fits and where the site does not say,
-with a link for each point. Then answer my questions.</code></pre>
-<p>The rules it follows are in <a href="../llms.txt"><code>/llms.txt</code></a>: read only, answer from this site and its sources, say so when the site does not say, and leave contacting José to you.</p>
+with a link for each point. Open the sources it links where you can.
+Rules: answer only from the site and its sources. If the site does not
+say, say so and do not guess. Do not contact anyone for me.
+Then answer my questions.</code></pre>
+<p>The same rules, in full, are in <a href="../llms.txt"><code>/llms.txt</code></a>.</p>
+
+<h3 id="cannot-read">If your assistant says it cannot open the site</h3>
+<p>Some assistants cannot read web pages, or cannot reach this one. Then give it the text yourself:</p>
+<ol>
+<li>Open <a href="../index.md">the site as plain text</a>, select everything and copy it.</li>
+<li>Paste it into your assistant under this line:</li>
+</ol>
+<pre tabindex="0"><code>Below is the text of José Bota's website. I am considering him for:
+[describe the role or project]. Tell me where its evidence fits and
+where it does not say. Answer only from this text; if it does not say,
+say so and do not guess. Then answer my questions.</code></pre>
 
 <h2 id="files">Files for AI agents</h2>
 <ul class="ticks">

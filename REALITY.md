@@ -43,6 +43,8 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - The instructions for site editors on `agents/` describe the site as it now is. Their list of files an editor may change is as the factory wrote it (`src/`, one field of `hub.json`, `README.md`); this file has been updated at José's word, and whether editors may change it freely is for Dinis Cruz to say.
 
+- José tested the prompt on `agents/` on 2026-11-17. Claude answered from the site but could not see the rules in `llms.txt`; ChatGPT, as he ran it, could not open the site at all. The prompt now carries its three rules itself and points at `index.md` as well, and the page gives a second prompt for an assistant that cannot open web pages. The site answers both assistants' readers; the new prompts have not been tested in an assistant.
+
 Does not exist:
 
 - No video, and no screenshots of his apps.
