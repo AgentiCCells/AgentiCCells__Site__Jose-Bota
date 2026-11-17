@@ -65,7 +65,7 @@ AgentiCCells/AgentiCCells__Site__Jose-Bota. Read CLAUDE.md and README.md
 first; their rules apply.
 
 - Change only files under src/, the "what_it_does" field of hub.json,
-  README.md and REALITY.md.
+  and README.md.
 - Static HTML and CSS, small plain JavaScript only if needed. Nothing
   loaded from other hosts: no scripts, styles, fonts, images or trackers.
 - Every page keeps a &lt;title&gt;, a &lt;meta name="description"&gt;,
@@ -78,8 +78,7 @@ first; their rules apply.
   then on the home page, so they never disagree.
 - Photos and videos go in only when José has supplied them and agreed,
   with their location data and other metadata removed.
-- Keep llms.txt, index.md and this page in step with the home page, and
-  keep REALITY.md true.
+- Keep llms.txt, index.md and this page in step with the home page.
 - Release with scripts/release.sh: the validator must print OK and the
   leak scan must be clean. José approves changes about him first.</code></pre>
 
@@ -90,7 +89,7 @@ first; their rules apply.
 <ul class="ticks">
 <li><a href="../"><code>/</code></a>: the home page, <code>src/index.html</code>. One self-contained page with its own styles, holding every section: who José is and where he works now, the tools he uses, his Web Summit work and agent team, how he works, what he can do for you, use with AI and contact, with the sources as small print in the footer. Its background answers the pointer through one small script, <code>assets/grid.js</code>; the page works without it.</li>
 <li>The home page is written in the first person ("I build"). <code>index.md</code>, <code>llms.txt</code> and this page are in the third person, because agents read them.</li>
-<li>Photos are in <code>src/media/photos/</code>: José's portrait and a photo with the RiskMandate team, both on the home page and on Photos and videos.</li>
+<li>Photos are in <code>src/media/photos/</code>: José's portrait and a photo of the Web Summit main stage, both on the home page and on Photos and videos.</li>
 <li>This page and <a href="../photos-and-videos/">Photos and videos</a> use the stylesheet <code>style.css</code>.</li>
 <li><code>work/</code>, <code>how-he-works/</code> and <code>for-you/</code> hold no content: they forward to the matching section of the home page, so older links keep working.</li>
 <li>Every page starts with the same skip link, styled by <code>assets/chrome.css</code>.</li>
@@ -102,7 +101,7 @@ first; their rules apply.
 <li>Change <code>index.md</code> first. It is the master copy of the facts.</li>
 <li>Make the same change on the home page, in the first person. Search <code>src/</code> for the old wording so that nothing is left behind.</li>
 <li>Update <code>llms.txt</code> if a page or a source changed.</li>
-<li>Add a dated line to <code>REALITY.md</code> saying what now exists and who asked for it.</li>
+<li><code>REALITY.md</code> should then say what now exists. It is outside the files listed above, so get José's yes before touching it; whether editors may change it freely is for Dinis Cruz to say.</li>
 </ol>
 
 <h4>Adding a photo or a video</h4>

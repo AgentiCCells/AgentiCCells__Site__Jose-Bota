@@ -37,11 +37,11 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - "Use with AI" on the home page is one action, "Get the prompt", leading to a short prompt on `agents/` that a hirer pastes into an AI assistant. The instructions for José's own agents and for site editors sit lower on that page, marked as being for maintainers.
 
-- Two photos, supplied by José on 2026-11-17, in `src/media/photos/`: his portrait (cropped; its metadata removed) and a photo of him with the RiskMandate team at Web Summit. On the team photo José said "run the picture of the team, no problem"; five other people are in it, their name badges are blurred so that no one is named, and this agent has no record of their agreement beyond José's word.
+- Two photos, supplied by José on 2026-11-17, in `src/media/photos/`: his portrait (cropped; its metadata removed) and the Web Summit main stage, cut from a larger picture so that no team member is in it. A photo of José with the RiskMandate team (five other people, name badges blurred) was live in v0.1.14 and v0.1.15 on José's word, and was taken down at his word after a check against Dinis's rules: the others' agreement is not recorded, and images here are CC BY 4.0. That file remains in the git history.
 
 - The Web Summit section is headed "I was with RiskMandate at Web Summit 2026", with the two figures on the left and the team photo as a small box on the right. "Where I work now" is three compact boxes.
 
-- The instructions for site editors on `agents/` describe the site as it now is, and list `REALITY.md` among the files an editor may change (José said yes to its being updated, 2026-11-17).
+- The instructions for site editors on `agents/` describe the site as it now is. Their list of files an editor may change is as the factory wrote it (`src/`, one field of `hub.json`, `README.md`); this file has been updated at José's word, and whether editors may change it freely is for Dinis Cruz to say.
 
 Does not exist:
 
