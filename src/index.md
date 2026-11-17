@@ -65,7 +65,7 @@ Both apps were offered as stand demos at Web Summit (https://web-summit.sgit.ai/
 
 ## Photos and videos
 
-More materials are coming. None is on the site yet.
+Two photos, both supplied by José on 2026-11-17: a portrait (https://jose-bota.agenticcells.site/media/photos/jose-bota.jpg) and José with the RiskMandate team at Web Summit Lisbon 2026, with the name badges blurred (https://jose-bota.agenticcells.site/media/photos/web-summit-riskmandate-team.jpg). More materials are coming.
 
 ---
 

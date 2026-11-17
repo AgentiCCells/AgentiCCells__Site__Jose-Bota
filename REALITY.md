@@ -37,9 +37,11 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - "Use with AI" on the home page is one action, "Get the prompt", leading to a short prompt on `agents/` that a hirer pastes into an AI assistant. The instructions for José's own agents and for site editors sit lower on that page, marked as being for maintainers.
 
+- Two photos, supplied by José on 2026-11-17, in `src/media/photos/`: his portrait (cropped; its metadata removed) and a photo of him with the RiskMandate team at Web Summit. On the team photo José said "run the picture of the team, no problem"; five other people are in it, their name badges are blurred so that no one is named, and this agent has no record of their agreement beyond José's word.
+
 Does not exist:
 
-- No photo or video. None reached the session; the media sections hold marked placeholders.
+- No video, and no screenshots of his apps.
 - No sgit vault (the factory skipped that step).
 - No preview environment, and `dev` is not a protected branch: a push to `dev` is a release.
 
