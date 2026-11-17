@@ -53,6 +53,16 @@ code{font-family:var(--mono);font-size:.9em}
 .stepper li:first-child a{border-color:var(--orange-fill)}
 .stepper li.out a{border-style:dashed}
 @media (max-height:520px){.top{position:static}html{scroll-padding-top:12px}[id]{scroll-margin-top:12px}}
+/* phones: all six sections visible at once, in two rows of three; nothing to scroll sideways */
+@media (max-width:640px){
+  .top{position:static}
+  html{scroll-padding-top:12px}[id]{scroll-margin-top:12px}
+  .stepper ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;overflow:visible;padding:10px 0}
+  .stepper li{display:block}
+  .stepper li+li::before{display:none}
+  .stepper a{justify-content:center;min-height:44px;padding:0 4px;font-size:.84rem;white-space:nowrap}
+  .stepper::after{display:none}
+}
 
 /* the canvas and the wire */
 main{position:relative;max-width:1100px;margin:0 auto;padding:36px var(--gutter) 20px calc(var(--gutter) + var(--pad))}
