@@ -33,7 +33,7 @@ Live as of v0.1.6 (commit ec348f5), checked on the live address:
 
 - The home page says where José works now (voicedebrief.ai, itwithus.com and promptugal.news) and names RiskMandate as the startup team he was with at Web Summit, with a link. All three were supplied by José on 2026-11-17; José gave his roles: co-founder of VoiceDebrief and of ITwithUs, developer at PrompTugal.news. This agent later opened voicedebrief.ai, itwithus.com and promptugal.news; none names him on its front page. riskmandate.ai stayed refused by the session's network policy.
 
-- The home page says José is based in the south of Portugal (supplied by José, 2026-11-17).
+- The home page says José is based in the south of Portugal, has two years in AI development, works in English, Portuguese, Spanish and French, and lists the tools he uses (all supplied by José, 2026-11-17; Lovable is from the newsroom review).
 
 - "Use with AI" on the home page is one action, "Get the prompt", leading to a short prompt on `agents/` that a hirer pastes into an AI assistant. The instructions for José's own agents and for site editors sit lower on that page, marked as being for maintainers.
 

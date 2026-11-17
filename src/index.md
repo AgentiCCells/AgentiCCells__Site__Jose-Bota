@@ -1,6 +1,6 @@
 # José Bota
 
-**AI automation expert.** José builds agent apps, automations and integrations, fast, with security in mind. He is based in the south of Portugal (supplied by José, 2026-11-17).
+**AI automation expert.** José builds agent apps, automations and integrations, fast, with security in mind. He is based in the south of Portugal, has been in AI development for two years, and works in English, Portuguese, Spanish and French. Tools he uses: n8n, Cursor, Claude, ChatGPT, GitHub, VS Code and Lovable. (All supplied by José, 2026-11-17, except Lovable, which the newsroom review names.)
 
 - Hiring for an AI role? See [What he can do for you](https://jose-bota.agenticcells.site/#full-time).
 - Have an automation project? See [What he can do for you](https://jose-bota.agenticcells.site/#projects).
